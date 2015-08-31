@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>通讯录</title>
+    <link rel="stylesheet" href="../../assets/common/css/yahoo-reset.css"/>
+    <link rel="stylesheet" href="../../assets/common/css/base.css"/>
+    <link rel="stylesheet" href="../../assets/common/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../assets/contact/css/contact.css">
+</head>
+<body>
+<!--user-menu-->
+<div class="user-menu yui3-g">
+    <div class="user-menu-hd yui3-u">
+        <a href="" class="yui3-u easyui-menubutton" data-options="menu:'#user-menu-content'">ASDFSDF<i class="fa fa-caret-down fa-blue fa-3x"></i></a>
+        <div id="user-menu-content" class="menu-content" style="position: absolute;">
+            <div class="user-menu-content-bd">
+                <i class="fa fa-caret-up fa-2x"></i>
+                <ul>
+                    <li>
+                        <a href="../accountSettings/message.html">消息</a>
+                    </li>
+                    <li>
+                        <a href="../accountSettings/bind.html">绑定</a>
+                    </li>
+                    <li>
+                        <a href="../accountSettings/userinfo-set.html">设置</a>
+                    </li>
+                    <li>
+                        <a href="">退出</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--user-menu end-->
+
+<!--cmspages-head-->
+<div class="cmspages-head yui3-g">
+    <div class="cmspages-head-menu yui3-u easyui-menubutton" data-options="menu:'#cmspages-head-menu-content'">
+        <img class="yui3-u" src="/Public/Home/images/common/images/icon/teacher/littleIcon/icon_contacts.png" alt=""/>
+        <label class="yui3-u">通讯录</label>
+        <i class="fa fa-angle-down fa-3x"></i>
+    </div>
+    <div id="cmspages-head-menu-content" class="menu-content" style="position: absolute;">
+        <div class="cmspages-head-menut-bd">
+            <i class=""></i>
+            <ul class="yui3-g">
+                <li class="yui3-u">
+                    <a href="/index.php?s=/Home/GroupManage/Group/myGroup.html"><img src="/Public/Home/images/common/images/icon/teacher/littleIcon/icon_class_anagement.png"></a>
+                    <p><a href="/index.php?s=/Home/GroupManage/Group/myGroup.html">班级管理</a></p>
+                </li>
+                <li class="yui3-u">
+                    <a href="/index.php?s=/Home/Group/Group/myGroup.html"><img src="/Public/Home/images/common/images/icon/teacher/littleIcon/icon_class_home.png"></a>
+                    <p><a href="/index.php?s=/Home/Group/Group/myGroup.html">班级园地</a></p>
+                </li>
+                <li class="yui3-u">
+                    <a href="http://192.168.0.201:3001/app/course"><img src="/Public/Home/images/common/images/icon/teacher/littleIcon/icon_course.png"></a>
+                    <p><a href="http://192.168.0.201:3001/app/course">备课</a></p>
+                </li>
+                <li class="yui3-u">
+                    <a href="http://192.168.0.201:3001/app/lesson"><img src="/Public/Home/images/common/images/icon/teacher/littleIcon/icon_lesson.png"></a>
+                    <p><a href="http://192.168.0.201:3001/app/lesson">授课</a></p>
+                </li>
+                <li class="yui3-u">
+                    <a href="http://192.168.0.201:3001"><img src="/Public/Home/images/common/images/icon/48/home.png"></a>
+                    <p><a href="http://192.168.0.201:3001">首页</a></p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--cmspages-head end-->
+
+
+<div class="cmspages">
+    <div class="cmspages-layout yui3-g">
+        <div class="cmspages-content-menu yui3-u">
+            <div class="cmspages-content-menu-bd">
+                <ul>
+                    <li>
+                        <a class="on" href="javascript:void(0)">全部联系人</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="cmspages-content yui3-u">
+            <div class="contact">
+                <div class="contact-hd">
+                    <div class="right-box search-box">
+                        <input type="text" name="" class="search-input">
+                        <input type="submit" class="yui3-u cp-button" value="搜索">
+                    </div>
+                </div>
+                <div class="contact-bd">
+                    <!--<table class="pure-table pure-table-horizontal">-->
+                    <!--<thead>-->
+                    <!--<tr>-->
+                        <!--<th>头像</th>-->
+                        <!--<th>个人信息</th>-->
+                        <!--<th>地址</th>-->
+                        <!--<th>电话</th>-->
+                    <!--</tr>-->
+                    <!--</thead>-->
+
+                    <!--<tbody>-->
+                    <!--<tr>-->
+                        <!--<td><img src="http://lorempixel.com/80/80/people/1/" alt=""/></td>-->
+                        <!--<td><p>李小龙</p></td>-->
+                        <!--<td>广州市海珠区宝岗大道11号</td>-->
+                        <!--<td>15715877654</td>-->
+                    <!--</tr>-->
+                    <!--<tr>-->
+                        <!--<td><img src="http://lorempixel.com/80/80/people/2/" alt=""/></td>-->
+                        <!--<td><p>李小名</p></td>-->
+                        <!--<td>广州市海珠区宝岗大道11号</td>-->
+                        <!--<td>15715877654</td>-->
+                    <!--</tr>-->
+                    <!--<tr>-->
+                        <!--<td><img src="http://lorempixel.com/80/80/people/3/" alt=""/></td>-->
+                        <!--<td><p>李小佬</p></td>-->
+                        <!--<td>广州市海珠区宝岗大道11号</td>-->
+                        <!--<td>15715877654</td>-->
+                    <!--</tr>-->
+                    <!--</tbody>-->
+                <!--</table>-->
+
+                    <div class="ui divided items">
+                        <div class="item">
+                            <div class="image yui3-u">
+                                <img src="http://lorempixel.com/175/145/people/1/">
+                            </div>
+                            <div class="content yui3-u">
+                                <h3>李小龙 &nbsp;&nbsp;&nbsp;&nbsp; 手机号：15715433423</h3>
+                                <p>联系地址：广州市海珠区宝岗大道11号</p>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="image yui3-u">
+                                <img src="http://lorempixel.com/175/145/people/2/">
+                            </div>
+                            <div class="content yui3-u">
+                                <h3>李小龙 &nbsp;&nbsp;&nbsp;&nbsp; 手机号：15715433423</h3>
+                                <p>联系地址：广州市海珠区宝岗大道11号</p>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="image yui3-u">
+                                <img src="http://lorempixel.com/175/145/people/4/">
+                            </div>
+                            <div class="content yui3-u">
+                                <h3>李小龙 &nbsp;&nbsp;&nbsp;&nbsp; 手机号：15715433423</h3>
+                                <p>联系地址：广州市海珠区宝岗大道11号</p>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="image yui3-u">
+                                <img src="http://lorempixel.com/175/145/people/5/">
+                            </div>
+                            <div class="content yui3-u">
+                                <h3>李小龙 &nbsp;&nbsp;&nbsp;&nbsp; 手机号：15715433423</h3>
+                                <p>联系地址：广州市海珠区宝岗大道11号</p>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="image yui3-u">
+                                <img src="http://lorempixel.com/175/145/people/6/">
+                            </div>
+                            <div class="content yui3-u">
+                                <h3>李小龙 &nbsp;&nbsp;&nbsp;&nbsp; 手机号：15715433423</h3>
+                                <p>联系地址：广州市海珠区宝岗大道11号</p>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="image yui3-u">
+                                <img src="http://lorempixel.com/175/145/people/7/">
+                            </div>
+                            <div class="content yui3-u">
+                                <h3>李小龙 &nbsp;&nbsp;&nbsp;&nbsp; 手机号：15715433423</h3>
+                                <p>联系地址：广州市海珠区宝岗大道11号</p>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+</body>
+</html>

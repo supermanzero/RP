@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>知识点组卷</title>
+    <link rel="stylesheet" href="../../assets/common/css/yahoo-reset.css"/>
+    <link rel="stylesheet" href="../../assets/common/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../assets/common/css/zTreeStyle.css"/>
+    <link rel="stylesheet" href="../../assets/common/css/base.css"/>
+    <link rel="stylesheet" href="../../assets/common/css/dialog.css"/>
+    <link rel="stylesheet" href="../../assets/assemble/css/assemble.css"/>
+</head>
+<body>
+<!--user-menu-->
+<div class="user-menu yui3-g">
+    <div class="user-menu-hd yui3-u">
+        <a href="" class="yui3-u easyui-menubutton" data-options="menu:'#user-menu-content'">ASDFSDF<i class="fa fa-caret-down fa-blue fa-3x"></i></a>
+        <div id="user-menu-content" class="menu-content" style="position: absolute;">
+            <div class="user-menu-content-bd">
+                <i class="fa fa-caret-up fa-2x"></i>
+                <ul>
+                    <li>
+                        <a href="../accountSettings/message.html">消息</a>
+                    </li>
+                    <li>
+                        <a href="../accountSettings/bind.html">绑定</a>
+                    </li>
+                    <li>
+                        <a href="../accountSettings/userinfo-set.html">设置</a>
+                    </li>
+                    <li>
+                        <a href="">退出</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--user-menu end-->
+
+<!--cmspages-head-->
+<div class="cmspages-head yui3-g">
+    <div class="cmspages-head-menu yui3-u easyui-menubutton" data-options="menu:'#cmspages-head-menu-content'">
+        <img class="yui3-u" src="../../assets/common/images/icon/48/s02.png" alt=""/>
+        <label class="yui3-u">个人空间</label>
+        <i class="fa fa-angle-down fa-3x"></i>
+    </div>
+    <div id="cmspages-head-menu-content" class="menu-content" style="position: absolute;">
+        <div class="cmspages-head-menut-bd">
+            <i class=""></i>
+            <ul class="yui3-g">
+                <li class="yui3-u">
+                    <a href=""><img src="../../assets/common/images/icon/48/s01.png" alt=""/></a>
+                    <p><a href="">备课</a></p>
+                </li>
+                <li class="yui3-u">
+                    <a href=""><img src="../../assets/common/images/icon/48/s02.png" alt=""/></a>
+                    <p><a href="">备课</a></p>
+                </li>
+                <li class="yui3-u">
+                    <a href=""><img src="../../assets/common/images/icon/48/s03.png" alt=""/></a>
+                    <p><a href="">备课</a></p>
+                </li>
+                <li class="yui3-u">
+                    <a href=""><img src="../../assets/common/images/icon/48/s04.png" alt=""/></a>
+                    <p><a href="">备课</a></p>
+                </li>
+                <li class="yui3-u">
+                    <a href="../home/menu.html"><img src="../../assets/common/images/icon/48/home.png" alt=""/></a>
+                    <p><a href="../home/menu.html">首页</a></p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--cmspages-head end-->
+
+<div class="cmspages">
+    <div class="cmspages-layout yui3-g">
+        <div class="cmspages-content-menu yui3-u">
+            <div class="cmspages-content-menu-bd">
+                <ul>
+                    <li>
+                        <a class="" href="./assemble.keep.html">我的收藏</a>
+                    </li>
+                    <li>
+                        <a class="" href="./assemble.synch.html">同步组卷</a>
+                    </li>
+                    <li>
+                        <a class="on" href="./assemble.knowledge.html">知识点组卷</a>
+                    </li>
+                    <li>
+                        <a class="" href="./assemble.myexam.html">我的组卷</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="cmspages-content yui3-u">
+            <div class="assemble assemble-synch assemble-exam">
+                <div class="exam-view-wrap">
+                    <div class="exam-view-subject-fixed">
+                        <div class="exam-view-subject">
+                            <div class="exam-view-subject-hd">
+                                <h3>试卷信息(40题)</h3>
+                                <!-- <p>
+                                     掌握程度：
+                                     <span class="wk-star">
+                                         <span class="wk-star-off">
+                                             <i class="fa fa-star-o fa-1"></i>
+                                             <i class="fa fa-star-o fa-1"></i>
+                                             <i class="fa fa-star-o fa-1"></i>
+                                             <i class="fa fa-star-o fa-1"></i>
+                                             <i class="fa fa-star-o fa-1"></i>
+                                             <span class="wk-star-box" style="width: 10%">
+                                                 <span class="wk-star-on">
+                                                     <i class="fa fa-star fa-1"></i>
+                                                     <i class="fa fa-star fa-1"></i>
+                                                     <i class="fa fa-star fa-1"></i>
+                                                     <i class="fa fa-star fa-1"></i>
+                                                     <i class="fa fa-star fa-1"></i>
+                                                 </span>
+                                             </span>
+                                         </span>
+                                     </span>
+                                 </p>-->
+                            </div>
+                            <table class="pure-table pure-table-horizontal">
+                                <tbody>
+                                <tr>
+                                    <td>单选题</td>
+                                    <td>
+                                        <p>10题</p>
+                                        <p>(20%)</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>多选题</td>
+                                    <td>
+                                        <p>10题</p>
+                                        <p>(20%)</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>填空题</td>
+                                    <td>
+                                        <p>10题</p>
+                                        <p>(20%)</p>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <a href="./assemble.view.html" class="yui3-u-1 cp-button link">试卷预览</a>
+                    </div>
+
+                    <div class="assemble-hd">
+                        <select name="" id="" class="yui3-u">
+                            <option value="">数学</option>
+                            <option value="">英语</option>
+                        </select>
+                        <select name="" id="" class="yui3-u">
+                            <option value="">初中</option>
+                            <option value="">高中</option>
+                        </select>
+                        <select name="" id="" class="yui3-u">
+                            <option value="">全部</option>
+                            <option value="">易</option>
+                            <option value="">普通</option>
+                            <option value="">难</option>
+                        </select>
+                        <input type="submit" class="yui3-u cp-button" value="搜索">
+                        <div class="right-box">
+                            <button class="yui3-u cp-button">本页全部试题加入试卷</button>
+                        </div>
+                    </div>
+
+                    <div class="exam-view-bd">
+                        <div class="exam-img">
+                            <img src="http://res.gopep.cn/exam_paper/2015/5/12/11/F5B35AE276EB8EBC98747785F50DD95.png" alt=""/>
+                        </div>
+                        <div class="exam-info">
+                            <p><span>【试题年份：2014年】</span><span>【难易度：难】</span><span>正确率：22%</span> <span>测试人数：72</span></p>
+                            <p><button class="yui3-u cp-button">加入试卷</button></p>
+                        </div>
+                        <a href="" class="keep-btn"><i class="fa fa-star-o fa-2x"></i></a>
+                    </div>
+
+                    <div class="exam-view-bd">
+                        <div class="exam-img">
+                            <img src="http://res.gopep.cn/exam_paper/2015/5/12/11/F5B35AE276EB8EBC98747785F50DD95.png" alt=""/>
+                        </div>
+                        <div class="exam-info">
+                            <p><span>【试题年份：2014年】</span><span>【难易度：难】</span><span>正确率：22%</span> <span>测试人数：72</span></p>
+                            <p><button class="yui3-u cp-button">加入试卷</button></p>
+                        </div>
+                        <a href="" class="keep-btn"><i class="fa fa-star fa-2x"></i></a>
+                    </div>
+
+                    <div class="exam-view-subject-fixed exam-view-category-fixed">
+                        <div class="exam-view-category">
+                            <ul id="treeDemo" class="ztree"></ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pagination">
+                    <a href=""><</a>
+                    <a  class="on" href="">1</a>
+                    <a href="">2</a>
+                    <a href="">3</a>
+                    <a href="">4</a>
+                    <a href="">5</a>
+                    <a href="">></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="../../assets/common/js/lib/jquery.js"></script>
+<script src="../../assets/common/js/require.js"></script>
+<script>
+    require(["easyui/easyloader","lib/ztree/jquery.ztree.core"],function(){
+        var setting = {
+            view: {
+                dblClickExpand: true,
+                showLine: false,
+                showIcon: showIconForTree
+            },
+            data: {
+                simpleData: {
+                    enable: true
+                }
+            },
+            callback: {
+                beforeMouseDown: beforeMouseDown,
+                beforeExpand: beforeExpand,
+                onExpand: onExpand
+            }
+        };
+
+        var zNodes =[
+            { id:1, pId:0, name:"物质性质和变化", "test":"heheheh"},
+            { id:11, pId:1, name:"物质的化学性质",  "test":"heheheh"},
+            { id:12, pId:1, name:"物质的化学性质"},
+            { id:13, pId:1, name:"物质的化学性质"},
+            { id:2, pId:0, name:"物质的化学性质"},
+            { id:21, pId:2, name:"物质的化学性质"},
+            { id:22, pId:2, name:"物质的化学性质2"},
+            { id:23, pId:2, name:"物质的化学性质"},
+            { id:3, pId:0, name:"物质的化学性质"},
+            { id:31, pId:3, name:"物质的化学性质"},
+            { id:32, pId:3, name:"物质的化学性质"},
+            { id:33, pId:3, name:"物质的化学性质"},
+            { pId:33, name:"物质的化学性质"},
+            { pId:33, name:"物质的化学性质"},
+            {pId:33, name:"物质的化学性质"}
+        ];
+
+        function showIconForTree(treeId, treeNode) {
+            return !treeNode.isParent;
+        };
+        function beforeMouseDown(treeId, treeNode) {
+            console.log(treeNode.id)
+        }
+        var curExpandNode = null;
+        function beforeExpand(treeId, treeNode) {
+            var pNode = curExpandNode ? curExpandNode.getParentNode():null;
+            var treeNodeP = treeNode.parentTId ? treeNode.getParentNode():null;
+            var zTree = $.fn.zTree.getZTreeObj("treeDemo");
+            for(var i=0, l=!treeNodeP ? 0:treeNodeP.children.length; i<l; i++ ) {
+                if (treeNode !== treeNodeP.children[i]) {
+                    zTree.expandNode(treeNodeP.children[i], false);
+                }
+            }
+            while (pNode) {
+                if (pNode === treeNode) {
+                    break;
+                }
+                pNode = pNode.getParentNode();
+            }
+            if (!pNode) {
+                singlePath(treeNode);
+            }
+
+        }
+        function singlePath(newNode) {
+            if (newNode === curExpandNode) return;
+
+            var zTree = $.fn.zTree.getZTreeObj("treeDemo"),
+                    rootNodes, tmpRoot, tmpTId, i, j, n;
+
+            if (!curExpandNode) {
+                tmpRoot = newNode;
+                while (tmpRoot) {
+                    tmpTId = tmpRoot.tId;
+                    tmpRoot = tmpRoot.getParentNode();
+                }
+                rootNodes = zTree.getNodes();
+                for (i=0, j=rootNodes.length; i<j; i++) {
+                    n = rootNodes[i];
+                    if (n.tId != tmpTId) {
+                        zTree.expandNode(n, false);
+                    }
+                }
+            } else if (curExpandNode && curExpandNode.open) {
+                if (newNode.parentTId === curExpandNode.parentTId) {
+                    zTree.expandNode(curExpandNode, false);
+                } else {
+                    var newParents = [];
+                    while (newNode) {
+                        newNode = newNode.getParentNode();
+                        if (newNode === curExpandNode) {
+                            newParents = null;
+                            break;
+                        } else if (newNode) {
+                            newParents.push(newNode);
+                        }
+                    }
+                    if (newParents!=null) {
+                        var oldNode = curExpandNode;
+                        var oldParents = [];
+                        while (oldNode) {
+                            oldNode = oldNode.getParentNode();
+                            if (oldNode) {
+                                oldParents.push(oldNode);
+                            }
+                        }
+                        if (newParents.length>0) {
+                            zTree.expandNode(oldParents[Math.abs(oldParents.length-newParents.length)-1], false);
+                        } else {
+                            zTree.expandNode(oldParents[oldParents.length-1], false);
+                        }
+                    }
+                }
+            }
+            curExpandNode = newNode;
+        }
+
+        function onExpand(event, treeId, treeNode) {
+            curExpandNode = treeNode;
+        }
+
+
+        $(function(){
+            $.fn.zTree.init($("#treeDemo"), setting, zNodes);
+
+            $(".cmspages-content").scroll(function(){
+                $(".exam-view-subject-fixed").css({"top":$(".cmspages-content").scrollTop()})
+            })
+        })
+    })
+</script>
+</body>
+</html>

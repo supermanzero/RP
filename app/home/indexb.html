@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>东田资源应用平台--首页</title>
+    <link rel="stylesheet" href="../../assets/common/css/yahoo-reset.css"/>
+    <link rel="stylesheet" href="../../assets/common/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="../../assets/common/css/index03.css"/>
+    <!--[if lte IE 7]>
+    <link rel="stylesheet" href="../../assets/common/css/update-browser.css"/>
+    <![endif]-->
+    <style>
+        html,body{
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow:hidden ;
+        }
+        body{
+            background: url("../../assets/common/images/index/bg.jpg") no-repeat center top;
+        }
+        a.link{
+            position: absolute;
+            top: 416px;
+            left: 50%;
+            width: 98px;
+            height: 34px;
+            /*background: #ddd;*/
+            margin-left: 315px;
+        }
+    </style>
+</head>
+<body>
+<a class="link" href="./menu.html"></a>
+<script src="../../assets/common/js/lib/jquery.js"></script>
+<script>
+    $(function(){
+        $(".login-input").on("focusout",function(){
+            if($(this).val()!=""){
+                $(this).css({"background-position":"0 -1px"})
+            }else{
+                $(this).css({"background-position":"-270px -111px"})
+            }
+        }).on("focusin",function(){
+            $(this).css({"background-position":"0 -1px"})
+        })
+        $(".btn").on("click",function(){
+            $(this).hide()
+            $(".banner").fadeIn(500)
+        })
+    })
+</script>
+</body>
+</html>

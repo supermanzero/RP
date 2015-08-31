@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>我的组卷</title>
+    <link rel="stylesheet" href="../../assets/common/css/yahoo-reset.css"/>
+    <link rel="stylesheet" href="../../assets/common/css/base.css"/>
+    <link rel="stylesheet" href="../../assets/common/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../assets/common/css/dialog.css"/>
+    <link rel="stylesheet" href="../../assets/assemble/css/assemble.css"/>
+
+    <!--日期组件css-->
+    <link rel="stylesheet" href="../../assets/assemble/css/datetimebox/datetimebox.css"/>
+    <!--日期组件css end-->
+</head>
+<body>
+<!--user-menu-->
+<div class="user-menu yui3-g">
+    <div class="user-menu-hd yui3-u">
+        <a href="" class="yui3-u easyui-menubutton" data-options="menu:'#user-menu-content'">ASDFSDF<i class="fa fa-caret-down fa-blue fa-3x"></i></a>
+        <div id="user-menu-content" class="menu-content" style="position: absolute;">
+            <div class="user-menu-content-bd">
+                <i class="fa fa-caret-up fa-2x"></i>
+                <ul>
+                    <li>
+                        <a href="../accountSettings/message.html">消息</a>
+                    </li>
+                    <li>
+                        <a href="../accountSettings/bind.html">绑定</a>
+                    </li>
+                    <li>
+                        <a href="../accountSettings/userinfo-set.html">设置</a>
+                    </li>
+                    <li>
+                        <a href="">退出</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--user-menu end-->
+
+<!--cmspages-head-->
+<div class="cmspages-head yui3-g">
+    <div class="cmspages-head-menu yui3-u easyui-menubutton" data-options="menu:'#cmspages-head-menu-content'">
+        <img class="yui3-u" src="../../assets/common/images/icon/48/s02.png" alt=""/>
+        <label class="yui3-u">个人空间</label>
+        <i class="fa fa-angle-down fa-3x"></i>
+    </div>
+    <div id="cmspages-head-menu-content" class="menu-content" style="position: absolute;">
+        <div class="cmspages-head-menut-bd">
+            <i class=""></i>
+            <ul class="yui3-g">
+                <li class="yui3-u">
+                    <a href=""><img src="../../assets/common/images/icon/48/s01.png" alt=""/></a>
+                    <p><a href="">备课</a></p>
+                </li>
+                <li class="yui3-u">
+                    <a href=""><img src="../../assets/common/images/icon/48/s02.png" alt=""/></a>
+                    <p><a href="">备课</a></p>
+                </li>
+                <li class="yui3-u">
+                    <a href=""><img src="../../assets/common/images/icon/48/s03.png" alt=""/></a>
+                    <p><a href="">备课</a></p>
+                </li>
+                <li class="yui3-u">
+                    <a href=""><img src="../../assets/common/images/icon/48/s04.png" alt=""/></a>
+                    <p><a href="">备课</a></p>
+                </li>
+                <li class="yui3-u">
+                    <a href="../home/menu.html"><img src="../../assets/common/images/icon/48/home.png" alt=""/></a>
+                    <p><a href="../home/menu.html">首页</a></p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--cmspages-head end-->
+
+<div class="cmspages">
+    <div class="cmspages-layout yui3-g">
+        <div class="cmspages-content-menu yui3-u">
+            <div class="cmspages-content-menu-bd">
+                <ul>
+                    <li>
+                        <a class="" href="./assemble.keep.html">我的收藏</a>
+                    </li>
+                    <li>
+                        <a class="" href="./assemble.synch.html">同步组卷</a>
+                    </li>
+                    <li>
+                        <a class="" href="./assemble.knowledge.html">知识点组卷</a>
+                    </li>
+                    <li>
+                        <a class="on" href="./assemble.myexam.html">我的组卷</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="cmspages-content yui3-u">
+            <div class="assemble assemble-synch">
+                <div class="assemble-hd">
+                    <select name="" id="" class="yui3-u">
+                        <option value="">全部</option>
+                        <option value="">语文</option>
+                        <option value="">数学</option>
+                    </select>
+                    <label class="yui3-u">学科</label>
+                    
+                    <div class="right-box search-box">
+                        <input type="text" name="" class="search-input"/>
+                        <input type="submit" class="yui3-u cp-button" value="搜索"/>
+                    </div>
+                </div>
+
+                <div class="assemble-synch-bd">
+                    <h3> 我的组卷共3条</h3>
+                    <table class="pure-table pure-table-bordered">
+                        <tbody>
+                        <tr>
+                            <td>
+                                <h4>2015年3月月考试题</h4>
+                                <p><span>高中</span><span>数学</span><span>组卷时间：2014-01-01</span></p>
+                            </td>
+                            <td><a href="javascript:void(0)" class="yui3-u cp-button" data-dialog="#download-message">下载</a></td>
+                            <td><a href="javascript:void(0)" class="yui3-u cp-button" data-dialog="#cmspages-dialog-lay">布置作业</a></td>
+                            <td><a href="javascript:void(0)" class="yui3-u cp-button" data-dialog="#exam-analysis">试卷分析</a></td>
+                            <td><a href="javascript:void(0)" class="yui3-u cp-button" data-dialog="#delect-message">删除组卷</a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h4>2015年3月月考试题</h4>
+                                <p><span>高中</span><span>数学</span><span>组卷时间：2014-01-01</span></p>
+                            </td>
+                            <td><a href="javascript:void(0)" class="yui3-u cp-button" data-dialog="#download-message">下载</a></td>
+                            <td><a href="javascript:void(0)" class="yui3-u cp-button" data-dialog="#cmspages-dialog-lay">布置作业</a></td>
+                            <td><a href="javascript:void(0)" class="yui3-u cp-button" data-dialog="#exam-analysis">试卷分析</a></td>
+                            <td><a href="javascript:void(0)" class="yui3-u cp-button" data-dialog="#delect-message">删除组卷</a></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--<div class="pagination">
+                    <a href=""><</a>
+                    <a  class="on" href="">1</a>
+                    <a href="">2</a>
+                    <a href="">3</a>
+                    <a href="">4</a>
+                    <a href="">5</a>
+                    <a href="">></a>
+                </div>-->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--下载提示-->
+<div id="download-message" style="position: absolute;top: -999px">
+    <div class="cmspages-dialog">
+        <div class="cmspages-dialog-hd">
+            <h3>下载试题</h3>
+            <!--<a href="#" class="nyroModalClose nyroModalCloseButton nmReposition fa fa-times-circle fa-2x" title="close" onclick="easyDialog.close();"></a>-->
+        </div>
+        <div class="cmspages-dialog-bd download-message">
+            <p align="center" style="margin-top: 30px;">文件名：2015年3月月考试题.pdf</p>
+            <p align="center" style="margin: 20px 0 0;"><label style="margin: 0 10px;"><input style="vertical-align: -2px;margin: 0 5px 0 0" type="radio" name="examtype" checked/>学生用卷</label><label style="margin: 0 10px;"><input style="vertical-align: -2px;margin: 0 5px 0 0" type="radio" name="examtype"/>教师用卷（附答案和解析）</label></p>
+            <div align="center" class="btn" style="padding:20px 0 0">
+                <a href="./assemble.student.downloadview.html" class="yui3-u cp-button">下载预览</a>
+                <input type="submit" class="yui3-u cp-button" value="确定下载" />
+            </div>
+        </div>
+    </div>
+</div>
+<!--下载提示 end-->
+
+<!--删除提示-->
+<div id="delect-message" style="position: absolute;top: -999px">
+    <div class="cmspages-dialog">
+        <div class="cmspages-dialog-hd">
+            <h3>删除试题</h3>
+            <!--<a href="#" class="nyroModalClose nyroModalCloseButton nmReposition fa fa-times-circle fa-2x" title="close" onclick="easyDialog.close();"></a>-->
+        </div>
+        <div class="cmspages-dialog-bd download-message">
+            <p style="margin-top: 30px;" align="center">删除后组件将无法恢复，确认删除试卷？</p>
+            <div align="center" class="btn" style="padding:20px 0 0">
+                <button class="yui3-u cp-button">确定</button>
+                <button class="yui3-u cp-button" onclick="easyDialog.close();">取消</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--删除提示 end-->
+
+<!--布置作业-->
+<div id="cmspages-dialog-lay" style="position: absolute;top: -999px">
+    <div class="cmspages-dialog">
+        <div class="cmspages-dialog-hd">
+            <h3>布置作业</h3>
+            <a href="#" class="nyroModalClose nyroModalCloseButton nmReposition fa fa-times-circle fa-2x" title="close" onclick="easyDialog.close();"></a>
+        </div>
+        <div class="cmspages-dialog-bd">
+            <div class="cmspages-dialog-bd-lay">
+                <ul>
+                    <li class="yui3-g">
+                        <label class="yui3-u info">作业名字：</label>
+                        <input type="text" class="yui3-u"/>
+                    </li>
+                    <li class="yui3-g">
+                        <label class="yui3-u info">布置班级：</label>
+                        <div class="yui3-u checkbox">
+                            <label class="yui3-u"><input type="checkbox"/>初一（1）班</label>
+                            <label class="yui3-u"><input type="checkbox"/>初一（1）班</label>
+                            <label class="yui3-u"><input type="checkbox"/>初一（1）班</label>
+                        </div>
+                    </li>
+                    <li class="yui3-g">
+                        <label class="yui3-u info">老师留言：</label>
+                        <textarea name="" class="yui3-u"></textarea>
+                    </li>
+                    <li class="yui3-g">
+                        <label class="yui3-u info">作业时间：</label>
+                        <div class="yui3-u">
+                            <input id="starttime" class="easyui-datetimebox" data-options="showSeconds:false" value="0"/>
+                            <span style="margin: 0 10px;">至</span>
+                            <input id="endtime" class="easyui-datetimebox" data-options="showSeconds:false" value="0"/>
+                        </div>
+                    </li>
+                    <li class="yui3-g">
+                        <label class="yui3-u info"></label>
+                        <div class="yui3-u ft-button">
+                            <input type="submit" class="yui3-u cp-button" value="确定"/>
+                            <button class="yui3-u cp-button">取消</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--布置作业 end-->
+
+<!--试卷分析-->
+<div id="exam-analysis" style="position: absolute;top: -999px">
+    <div class="cmspages-dialog">
+        <div class="cmspages-dialog-hd">
+            <h3>试卷分析</h3>
+            <!--<a href="#" class="nyroModalClose nyroModalCloseButton nmReposition fa fa-times-circle fa-2x" title="close" onclick="easyDialog.close();"></a>-->
+        </div>
+        <div class="cmspages-dialog-bd exam-analysis">
+            <ul>
+                <li>
+                    <label>试卷题目数：</label>40
+                </li>
+                <li>
+                    <label>试卷类型：</label>
+                    <table class="pure-table pure-table-bordered">
+                        <tbody>
+                        <tr>
+                            <td>单选题</td>
+                            <td>10题（25%）</td>
+                        </tr>
+                        <tr>
+                            <td>多选题</td>
+                            <td>10题（25%）</td>
+                        </tr>
+                        <tr>
+                            <td>填空题</td>
+                            <td>10题（25%）</td>
+                        </tr>
+                        <tr>
+                            <td>解答题</td>
+                            <td>10题（25%）</td>
+                        </tr>
+                        <tr>
+                            <td>作业已使用题</td>
+                            <td>10题（25%）</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </li>
+                <li>
+                    <label for="">知识点分析：</label>
+                    <div class="container-wrap" style="width: 600px;background: #fff;margin: 20px auto 0">
+                        <div id="container" class="container" style="margin:auto;width: 300px;height: 200px"></div>
+                    </div>
+
+                    <table class="pure-table pure-table-bordered">
+                        <thead>
+                        <tr>
+                            <th>知识点</th>
+                            <th>所占比重</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>元素表</td>
+                            <td>20%</td>
+                        </tr>
+                        <tr>
+                            <td>化学方程式</td>
+                            <td>20%</td>
+                        </tr>
+                        <tr>
+                            <td>化学反应</td>
+                            <td>20%</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </li>
+                <li>
+                    <label for="">难易程度：</label>
+                    <span class="wk-star" style="vertical-align: -3px">
+                        <span class="wk-star-off">
+                            <i class="fa fa-star-o fa-1"></i>
+                            <i class="fa fa-star-o fa-1"></i>
+                            <i class="fa fa-star-o fa-1"></i>
+                            <i class="fa fa-star-o fa-1"></i>
+                            <i class="fa fa-star-o fa-1"></i>
+                            <span class="wk-star-box" style="width: 10%">
+                                <span class="wk-star-on">
+                                    <i class="fa fa-star fa-1"></i>
+                                    <i class="fa fa-star fa-1"></i>
+                                    <i class="fa fa-star fa-1"></i>
+                                    <i class="fa fa-star fa-1"></i>
+                                    <i class="fa fa-star fa-1"></i>
+                                </span>
+                            </span>
+                        </span>
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--试卷分析 end-->
+
+<script src="../../assets/common/js/lib/jquery.js"></script>
+<script src="../../assets/common/js/require.js"></script>
+<script>
+    require(["easyui/easyloader","lib/highcharts/highcharts","lib/dialog"],function(){
+        $(function(){
+            easyloader.load(["datetimebox"])
+
+            $("[data-dialog]").on("click",function(){
+                $.nmManual($(this).attr("data-dialog"), {closeButton: '<a href="#" class="nyroModalClose nyroModalCloseButton nmReposition fa fa-times-circle fa-2x" title="close"></a>'})
+            })
+
+            $(".cmspages-content").scroll(function(){
+                $(".exam-view-subject-fixed").css({"top":$(".cmspages-content").scrollTop()})
+            })
+
+            // Build the chart
+            $('#container').highcharts({
+                chart: {
+                    plotBackgroundColor: null,
+                    plotBorderWidth: null,
+                    plotShadow: false
+                },
+                title: {
+                    text: ''
+                },
+
+                plotOptions: {
+                    pie: {
+                        allowPointSelect: true,
+                        cursor: 'pointer',
+                        depth: 35,
+                        dataLabels: {
+                            color:'#fff',
+                            enabled: false,
+                            formatter:function(){
+                                return '<b>'+this.point.name+'</b>:'+this.point.percentage.toFixed(2)+"%";
+                            },
+                            connectorWidth:0,
+                            connectorPadding:0,
+                            distance:-50
+                        },
+                        showInLegend: true
+                    }
+                },
+                tooltip: {
+                    pointFormat: '所占比例: <b>{point.percentage:.1f}%</b>'
+                },
+                series: [{
+                    type: 'pie',
+                    name: '人数',
+                    data: [
+                        {name:'元素表',y:2},
+                        {name:'化学反应式',y:5},
+                        {name:'化学反应',y:3}
+                    ]
+                }]
+            });
+            $("text[text-anchor='end']:contains('Highcharts.com')").hide()
+        })
+    })
+</script>
+</body>
+</html>

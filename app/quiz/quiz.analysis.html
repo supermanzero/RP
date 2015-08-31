@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>学习分析</title>
+    <link rel="stylesheet" href="../../assets/common/css/yahoo-reset.css"/>
+    <link rel="stylesheet" href="../../assets/common/css/base.css"/>
+    <link rel="stylesheet" href="../../assets/common/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../assets/common/css/dialog.css"/>
+    <link rel="stylesheet" href="../../assets/quiz/css/quiz.css"/>
+</head>
+<body>
+<!--user-menu-->
+<div class="user-menu yui3-g">
+    <div class="user-menu-hd yui3-u">
+        <a href="" class="yui3-u easyui-menubutton" data-options="menu:'#user-menu-content'">ASDFSDF<i class="fa fa-caret-down fa-blue fa-3x"></i></a>
+        <div id="user-menu-content" class="menu-content" style="position: absolute;">
+            <div class="user-menu-content-bd">
+                <i class="fa fa-caret-up fa-2x"></i>
+                <ul>
+                    <li>
+                        <a href="../accountSettings/message.html">消息</a>
+                    </li>
+                    <li>
+                        <a href="../accountSettings/bind.html">绑定</a>
+                    </li>
+                    <li>
+                        <a href="../accountSettings/userinfo-set.html">设置</a>
+                    </li>
+                    <li>
+                        <a href="">退出</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--user-menu end-->
+
+<!--cmspages-head-->
+<div class="cmspages-head yui3-g">
+    <div class="cmspages-head-menu yui3-u easyui-menubutton" data-options="menu:'#cmspages-head-menu-content'">
+        <img class="yui3-u" src="../../assets/common/images/icon/48/s02.png" alt=""/>
+        <label class="yui3-u">个人空间</label>
+        <i class="fa fa-angle-down fa-3x"></i>
+    </div>
+    <div id="cmspages-head-menu-content" class="menu-content" style="position: absolute;">
+        <div class="cmspages-head-menut-bd">
+            <i class=""></i>
+            <ul class="yui3-g">
+                <li class="yui3-u">
+                    <a href=""><img src="../../assets/common/images/icon/48/s01.png" alt=""/></a>
+                    <p><a href="">备课</a></p>
+                </li>
+                <li class="yui3-u">
+                    <a href=""><img src="../../assets/common/images/icon/48/s02.png" alt=""/></a>
+                    <p><a href="">备课</a></p>
+                </li>
+                <li class="yui3-u">
+                    <a href=""><img src="../../assets/common/images/icon/48/s03.png" alt=""/></a>
+                    <p><a href="">备课</a></p>
+                </li>
+                <li class="yui3-u">
+                    <a href=""><img src="../../assets/common/images/icon/48/s04.png" alt=""/></a>
+                    <p><a href="">备课</a></p>
+                </li>
+                <li class="yui3-u">
+                    <a href="../home/menu.html"><img src="../../assets/common/images/icon/48/home.png" alt=""/></a>
+                    <p><a href="../home/menu.html">首页</a></p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--cmspages-head end-->
+
+<div class="cmspages">
+    <div class="cmspages-layout yui3-g">
+        <div class="cmspages-content-menu yui3-u">
+            <div class="cmspages-content-menu-bd">
+                <ul>
+                    <li>
+                        <a class="" href="./quiz.synch.html">同步训练</a>
+                    </li>
+                    <li>
+                        <a class="" href="./quiz.special.html">专项考试</a>
+                    </li>
+                    <li>
+                        <a class="" href="./quiz.search.html">考试训练</a>
+                    </li>
+                    <li>
+                        <a class="" href="./quiz.strengthen.html">强化训练</a>
+                    </li>
+                    <li class="on">
+                        <a class="" href="javascript:void(0)"><i class="fa fa-chevron-circle-right fa-grey fa-2x"></i><i class="fa fa-chevron-circle-down fa-grey fa-2x"></i>个人中心</a>
+                        <ul>
+                            <li>
+                                <a class="on" href="./quiz.analysis.html">学习分析</a>
+                            </li>
+                            <li>
+                                <a href="./quiz.record.html">测试记录</a>
+                            </li>
+                            <li>
+                                <a href="./quiz.myexam.html">我的组卷</a>
+                            </li>
+                            <li>
+                                <a href="./quiz.keep.html">我的收藏</a>
+                            </li>
+                            <li>
+                                <a href="./quiz.wrong.html">我的错题本</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="cmspages-content yui3-u">
+            <div class="assemble assemble-view">
+                <div class="exam-view-wrap">
+                    <div class="exam-view-subject-fixed">
+                        <div class="exam-view-subject">
+                            <div class="exam-view-subject-hd">
+                                <h3>测试库中共有26条题目</h3>
+                            </div>
+                        </div>
+                        <div class="exam-view-subject-ft">
+                            <!--第一次测试显示开始测试-->
+                            <!--<a href="" class="yui3-u cp-button">开始测试</a>-->
+                            <a href="" class="yui3-u cp-button">添加试题</a>
+                            <a href="" class="yui3-u cp-button">进入测试库</a>
+                        </div>
+                    </div>
+
+                    <div class="quiz-analysis">
+                        <div class="quiz-analysis-info">
+                            <p>今天您总共练习了53道题涉及30个知识点，练习总时长是1分30秒，准确率（只计客观题）是3.77%</p>
+                        </div>
+
+                        <div class="quiz-analysis-bd">
+                            <h3 class="yui3-u cp-button">最近一个星期出错的知识点为以下：</h3>
+                            <table class="pure-table pure-table-bordered">
+                                <tbody>
+                                <tr>
+                                    <td>高中</td>
+                                    <td>数学</td>
+                                    <td>集合的概念及其基本运算，命题及其关系，充分条件与必要条件，空间点，直线，平面之间的位置关系</td>
+                                </tr>
+                                <tr>
+                                    <td>高中</td>
+                                    <td>数学</td>
+                                    <td>集合的概念及其基本运算，命题及其关系，充分条件与必要条件，空间点，直线，平面之间的位置关系</td>
+                                </tr>
+                                <tr>
+                                    <td>高中</td>
+                                    <td>数学</td>
+                                    <td>集合的概念及其基本运算，命题及其关系，充分条件与必要条件，空间点，直线，平面之间的位置关系</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="quiz-analysis-bd">
+                            <h3 class="yui3-u cp-button">试卷题目统计：</h3>
+                            <div id="container" style="min-width:700px;height:400px"></div>
+                            <div class="quiz-analysis-ft" align="center">
+                                <button class="yui3-u cp-button default-button" data-chart="1">今天</button>
+                                <button class="yui3-u cp-button" data-chart="7">7天内</button>
+                                <button class="yui3-u cp-button default-button" data-chart="0">全部</button>
+                            </div>
+                        </div>
+
+
+
+                        <div class="quiz-analysis-bd">
+                            <h3 class="yui3-u cp-button">7天内每天练习各个科目试题正确率：</h3>
+                            <div id="container-line" style="min-width:700px;height:400px"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!--<div class="pagination">
+                    <a href=""><</a>
+                    <a  class="on" href="">1</a>
+                    <a href="">2</a>
+                    <a href="">3</a>
+                    <a href="">4</a>
+                    <a href="">5</a>
+                    <a href="">></a>
+                </div>-->
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="../../assets/common/js/lib/jquery.js"></script>
+<script src="../../assets/common/js/require.js"></script>
+<script>
+    require(["easyui/easyloader","core/statistical"],function(easyloader,statistical){
+        $(function(){
+            $(".cmspages-content").scroll(function(){
+                $(".exam-view-subject-fixed").css({"top":$(".cmspages-content").scrollTop()})
+            })
+            statistical.analysis()
+        })
+    })
+</script>
+</body>
+</html>

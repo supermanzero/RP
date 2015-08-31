@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN" xml:lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>答题统计</title>
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+<!--    <link rel="stylesheet" href="../../assets/common/css/yahoo-reset.css"/>
+    <link rel="stylesheet" href="../../assets/common/css/base.css"/>
+    <link rel="stylesheet" href="../../assets/common/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/common/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="../../assets/work/css/dialog.css"/>
+    <link rel="stylesheet" href="../../assets/work/css/work.css"/>-->
+
+    <link rel="stylesheet" href="../../assets/common/css/yahoo-reset.css"/>
+    <link rel="stylesheet" href="../../assets/common/css/base.css"/>
+    <link rel="stylesheet" href="../../assets/common/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../assets/work/css/dialog.css"/>
+    <link rel="stylesheet" href="../../assets/work/css/work2.css"/>
+</head>
+<body>
+<!--user-menu-->
+<div class="user-menu yui3-g">
+    <div class="user-menu-hd yui3-u">
+        <a href="" class="yui3-u easyui-menubutton" data-options="menu:'#user-menu-content'">ASDFSDF<i class="fa fa-caret-down fa-blue fa-3x"></i></a>
+        <div id="user-menu-content" class="menu-content" style="position: absolute;">
+            <div class="user-menu-content-bd">
+                <i class="fa fa-caret-up fa-2x"></i>
+                <ul>
+                    <li>
+                        <a href="../accountSettings/message.html">消息</a>
+                    </li>
+                    <li>
+                        <a href="../accountSettings/bind.html">绑定</a>
+                    </li>
+                    <li>
+                        <a href="../accountSettings/userinfo-set.html">设置</a>
+                    </li>
+                    <li>
+                        <a href="">退出</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--user-menu end-->
+
+<!--cmspages-head-->
+<div class="cmspages-head yui3-g">
+    <div class="cmspages-head-menu yui3-u easyui-menubutton" data-options="menu:'#cmspages-head-menu-content'">
+        <img class="yui3-u" src="../../assets/common/images/icon/48/s02.png" alt=""/>
+        <label class="yui3-u">个人空间</label>
+        <i class="fa fa-angle-down fa-3x"></i>
+    </div>
+    <div id="cmspages-head-menu-content" class="menu-content" style="position: absolute;">
+        <div class="cmspages-head-menut-bd">
+            <i class=""></i>
+            <ul class="yui3-g">
+                <li class="yui3-u">
+                    <a href=""><img src="../../assets/common/images/icon/48/s01.png" alt=""/></a>
+                    <p><a href="">备课</a></p>
+                </li>
+                <li class="yui3-u">
+                    <a href=""><img src="../../assets/common/images/icon/48/s02.png" alt=""/></a>
+                    <p><a href="">备课</a></p>
+                </li>
+                <li class="yui3-u">
+                    <a href=""><img src="../../assets/common/images/icon/48/s03.png" alt=""/></a>
+                    <p><a href="">备课</a></p>
+                </li>
+                <li class="yui3-u">
+                    <a href=""><img src="../../assets/common/images/icon/48/s04.png" alt=""/></a>
+                    <p><a href="">备课</a></p>
+                </li>
+                <li class="yui3-u">
+                    <a href="../home/menu.html"><img src="../../assets/common/images/icon/48/home.png" alt=""/></a>
+                    <p><a href="../home/menu.html">首页</a></p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--cmspages-head end-->
+
+<div class="cmspages">
+<div class="cmspages-layout yui3-g">
+<div class="cmspages-content-menu yui3-u">
+    <div class="cmspages-content-menu-bd">
+        <ul>
+            <li>
+                <a class="on" href="javascript:void(0)">初一（1）班</a>
+            </li>
+            <li>
+                <a class="" href="javascript:void(0)">初一（1）班</a>
+            </li>
+            <li>
+                <a class="" href="javascript:void(0)">初一（1）班</a>
+            </li>
+            <li>
+                <a class="" href="javascript:void(0)">初一（1）班</a>
+            </li>
+            <li>
+                <a class="" href="javascript:void(0)">初一（1）班</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="cmspages-content yui3-u">
+    <div class="pub-breadcrumb-wrap">
+        <ol class="pub-breadcrumb yui3-g">
+            <li class="yui3-u"><a href="javascript:void(0);">作业管理</a></li>
+            <li class="yui3-u"><a href="javascript:void(0);">初一（1）班</a></li>
+            <li class="yui3-u active"><a href="">检查作业</a></li>
+            <li class="yui3-u active">答题统计</li>
+        </ol>
+        <div class="btn-box yui3-u">
+            <a href="/" class="yui3-u cp-button">返回</a>
+        </div>
+    </div>
+
+
+    <div class="exam-view-wrap">
+        <div class="exam-view-subject-fixed">
+            <div class="exam-view-subject">
+                <div class="exam-view-subject-hd">
+                    <h3>姓名：李小佬</h3>
+                   <!-- <p>
+                        掌握程度：
+                        <span class="wk-star">
+                            <span class="wk-star-off">
+                                <i class="fa fa-star-o fa-1"></i>
+                                <i class="fa fa-star-o fa-1"></i>
+                                <i class="fa fa-star-o fa-1"></i>
+                                <i class="fa fa-star-o fa-1"></i>
+                                <i class="fa fa-star-o fa-1"></i>
+                                <span class="wk-star-box" style="width: 10%">
+                                    <span class="wk-star-on">
+                                        <i class="fa fa-star fa-1"></i>
+                                        <i class="fa fa-star fa-1"></i>
+                                        <i class="fa fa-star fa-1"></i>
+                                        <i class="fa fa-star fa-1"></i>
+                                        <i class="fa fa-star fa-1"></i>
+                                    </span>
+                                </span>
+                            </span>
+                        </span>
+                    </p>-->
+                </div>
+                <dl class="yui3-g">
+                    <dt class="yui3-u-1">一、单选题</dt>
+                    <dd class="yui3-u past">1</dd>
+                    <dd class="yui3-u now">1</dd>
+                    <dd class="yui3-u">1</dd>
+                    <dd class="yui3-u">1</dd>
+                    <dd class="yui3-u">1</dd>
+                    <dd class="yui3-u">1</dd>
+                    <dd class="yui3-u">1</dd>
+                    <dd class="yui3-u">1</dd>
+                    <dd class="yui3-u">1</dd>
+                    <dd class="yui3-u">1</dd>
+                    <dd class="yui3-u">1</dd>
+                </dl>
+                <dl class="yui3-g">
+                    <dt class="yui3-u-1">二、解答题</dt>
+                    <dd class="yui3-u">1</dd>
+                    <dd class="yui3-u">1</dd>
+                    <dd class="yui3-u">1</dd>
+                    <dd class="yui3-u">1</dd>
+                    <dd class="yui3-u">1</dd>
+                    <dd class="yui3-u">1</dd>
+                    <dd class="yui3-u">1</dd>
+                    <dd class="yui3-u">1</dd>
+                    <dd class="yui3-u">1</dd>
+                    <dd class="yui3-u">1</dd>
+                    <dd class="yui3-u">1</dd>
+                </dl>
+                <div class="info">
+                    <ul class="yui3-g">
+                        <li class="yui3-u-1-3">
+                            <i class="past"></i><span>已批改</span>
+                        </li>
+                        <li class="yui3-u-1-3">
+                            <i class="now"></i><span>当前批改</span>
+                        </li>
+                        <li class="yui3-u-1-3">
+                            <i class=""></i><span>未批改</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="exam-view-title">
+            <h2>2014年永州市初中毕业学业考试（语文）</h2>
+        </div>
+
+        <div class="exam-view-hd">
+            <h3>一、单选题</h3>
+        </div>
+
+        <div class="exam-view-bd">
+            <span class="num">1</span>
+            <div class="exam-img">
+                <img src="http://res.gopep.cn/exam_paper/2015/5/12/11/F5B35AE276EB8EBC98747785F50DD95.png" alt=""/>
+            </div>
+            <div class="btn" align="right">
+                <button class="yui3-u cp-button">答题统计</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
+
+<!--答题统计-->
+<div id="other_group_user" style="display: block">
+    <div class="cmspages-dialog">
+        <div class="cmspages-dialog-hd">
+            <h3>答题统计</h3>
+            <a href="#" class="nyroModalClose nyroModalCloseButton nmReposition fa fa-times-circle fa-2x" title="close" onclick="easyDialog.close();"></a>
+        </div>
+        <div class="cmspages-dialog-bd">
+            <div class="counttopic">
+                <table class="pure-table pure-table-horizontal">
+                    <thead>
+                    <tr>
+                        <th>掌握程度</th>
+                        <th>人数</th>
+                        <th>比例</th>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                    <tr>
+                        <td>
+                            <span class="wk-star" style="vertical-align: -3px">
+                             <span class="wk-star-off">
+                                 <i class="fa fa-star-o fa-1"></i>
+                                 <i class="fa fa-star-o fa-1"></i>
+                                 <i class="fa fa-star-o fa-1"></i>
+                                 <i class="fa fa-star-o fa-1"></i>
+                                 <i class="fa fa-star-o fa-1"></i>
+                                 <span class="wk-star-box" style="width: 0%">
+                                     <span class="wk-star-on">
+                                         <i class="fa fa-star fa-1"></i>
+                                         <i class="fa fa-star fa-1"></i>
+                                         <i class="fa fa-star fa-1"></i>
+                                         <i class="fa fa-star fa-1"></i>
+                                         <i class="fa fa-star fa-1"></i>
+                                     </span>
+                                 </span>
+                             </span>
+                         </span>
+                        </td>
+                        <td>13人</td>
+                        <td>10%</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <span class="wk-star" style="vertical-align: -3px">
+                             <span class="wk-star-off">
+                                 <i class="fa fa-star-o fa-1"></i>
+                                 <i class="fa fa-star-o fa-1"></i>
+                                 <i class="fa fa-star-o fa-1"></i>
+                                 <i class="fa fa-star-o fa-1"></i>
+                                 <i class="fa fa-star-o fa-1"></i>
+                                 <span class="wk-star-box" style="width: 20%">
+                                     <span class="wk-star-on">
+                                         <i class="fa fa-star fa-1"></i>
+                                         <i class="fa fa-star fa-1"></i>
+                                         <i class="fa fa-star fa-1"></i>
+                                         <i class="fa fa-star fa-1"></i>
+                                         <i class="fa fa-star fa-1"></i>
+                                     </span>
+                                 </span>
+                             </span>
+                         </span>
+                        </td>
+                        <td>13人</td>
+                        <td>10%</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <span class="wk-star" style="vertical-align: -3px">
+                             <span class="wk-star-off">
+                                 <i class="fa fa-star-o fa-1"></i>
+                                 <i class="fa fa-star-o fa-1"></i>
+                                 <i class="fa fa-star-o fa-1"></i>
+                                 <i class="fa fa-star-o fa-1"></i>
+                                 <i class="fa fa-star-o fa-1"></i>
+                                 <span class="wk-star-box" style="width: 40%">
+                                     <span class="wk-star-on">
+                                         <i class="fa fa-star fa-1"></i>
+                                         <i class="fa fa-star fa-1"></i>
+                                         <i class="fa fa-star fa-1"></i>
+                                         <i class="fa fa-star fa-1"></i>
+                                         <i class="fa fa-star fa-1"></i>
+                                     </span>
+                                 </span>
+                             </span>
+                         </span>
+                        </td>
+                        <td>13人</td>
+                        <td>10%</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <span class="wk-star" style="vertical-align: -3px">
+                             <span class="wk-star-off">
+                                 <i class="fa fa-star-o fa-1"></i>
+                                 <i class="fa fa-star-o fa-1"></i>
+                                 <i class="fa fa-star-o fa-1"></i>
+                                 <i class="fa fa-star-o fa-1"></i>
+                                 <i class="fa fa-star-o fa-1"></i>
+                                 <span class="wk-star-box" style="width: 60%">
+                                     <span class="wk-star-on">
+                                         <i class="fa fa-star fa-1"></i>
+                                         <i class="fa fa-star fa-1"></i>
+                                         <i class="fa fa-star fa-1"></i>
+                                         <i class="fa fa-star fa-1"></i>
+                                         <i class="fa fa-star fa-1"></i>
+                                     </span>
+                                 </span>
+                             </span>
+                         </span>
+                        </td>
+                        <td>13人</td>
+                        <td>10%</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <span class="wk-star" style="vertical-align: -3px">
+                             <span class="wk-star-off">
+                                 <i class="fa fa-star-o fa-1"></i>
+                                 <i class="fa fa-star-o fa-1"></i>
+                                 <i class="fa fa-star-o fa-1"></i>
+                                 <i class="fa fa-star-o fa-1"></i>
+                                 <i class="fa fa-star-o fa-1"></i>
+                                 <span class="wk-star-box" style="width: 80%">
+                                     <span class="wk-star-on">
+                                         <i class="fa fa-star fa-1"></i>
+                                         <i class="fa fa-star fa-1"></i>
+                                         <i class="fa fa-star fa-1"></i>
+                                         <i class="fa fa-star fa-1"></i>
+                                         <i class="fa fa-star fa-1"></i>
+                                     </span>
+                                 </span>
+                             </span>
+                         </span>
+                        </td>
+                        <td>13人</td>
+                        <td>10%</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <span class="wk-star" style="vertical-align: -3px">
+                             <span class="wk-star-off">
+                                 <i class="fa fa-star-o fa-1"></i>
+                                 <i class="fa fa-star-o fa-1"></i>
+                                 <i class="fa fa-star-o fa-1"></i>
+                                 <i class="fa fa-star-o fa-1"></i>
+                                 <i class="fa fa-star-o fa-1"></i>
+                                 <span class="wk-star-box" style="width: 100%">
+                                     <span class="wk-star-on">
+                                         <i class="fa fa-star fa-1"></i>
+                                         <i class="fa fa-star fa-1"></i>
+                                         <i class="fa fa-star fa-1"></i>
+                                         <i class="fa fa-star fa-1"></i>
+                                         <i class="fa fa-star fa-1"></i>
+                                     </span>
+                                 </span>
+                             </span>
+                         </span>
+                        </td>
+                        <td>13人</td>
+                        <td>10%</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<!--答题统计 end-->
+
+<script src="../../assets/common/js/lib/jquery.js"></script>
+<script src="../../assets/common/js/require.js"></script>
+<script>
+    require(["easyui/easyloader"])
+
+</script>
+
+
+</body>
+</html>

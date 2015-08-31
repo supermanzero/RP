@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>同步训练</title>
+    <link rel="stylesheet" href="../../assets/common/css/yahoo-reset.css"/>
+    <link rel="stylesheet" href="../../assets/common/css/base.css"/>
+    <link rel="stylesheet" href="../../assets/common/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../assets/common/css/dialog.css"/>
+    <link rel="stylesheet" href="../../assets/quiz/css/quiz.css"/>
+</head>
+<body>
+<!--user-menu-->
+<div class="user-menu yui3-g">
+    <div class="user-menu-hd yui3-u">
+        <a href="" class="yui3-u easyui-menubutton" data-options="menu:'#user-menu-content'">ASDFSDF<i class="fa fa-caret-down fa-blue fa-3x"></i></a>
+        <div id="user-menu-content" class="menu-content" style="position: absolute;">
+            <div class="user-menu-content-bd">
+                <i class="fa fa-caret-up fa-2x"></i>
+                <ul>
+                    <li>
+                        <a href="../accountSettings/message.html">消息</a>
+                    </li>
+                    <li>
+                        <a href="../accountSettings/bind.html">绑定</a>
+                    </li>
+                    <li>
+                        <a href="../accountSettings/userinfo-set.html">设置</a>
+                    </li>
+                    <li>
+                        <a href="">退出</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--user-menu end-->
+
+<!--cmspages-head-->
+<div class="cmspages-head yui3-g">
+    <div class="cmspages-head-menu yui3-u easyui-menubutton" data-options="menu:'#cmspages-head-menu-content'">
+        <img class="yui3-u" src="../../assets/common/images/icon/48/s02.png" alt=""/>
+        <label class="yui3-u">个人空间</label>
+        <i class="fa fa-angle-down fa-3x"></i>
+    </div>
+    <div id="cmspages-head-menu-content" class="menu-content" style="position: absolute;">
+        <div class="cmspages-head-menut-bd">
+            <i class=""></i>
+            <ul class="yui3-g">
+                <li class="yui3-u">
+                    <a href=""><img src="../../assets/common/images/icon/48/s01.png" alt=""/></a>
+                    <p><a href="">备课</a></p>
+                </li>
+                <li class="yui3-u">
+                    <a href=""><img src="../../assets/common/images/icon/48/s02.png" alt=""/></a>
+                    <p><a href="">备课</a></p>
+                </li>
+                <li class="yui3-u">
+                    <a href=""><img src="../../assets/common/images/icon/48/s03.png" alt=""/></a>
+                    <p><a href="">备课</a></p>
+                </li>
+                <li class="yui3-u">
+                    <a href=""><img src="../../assets/common/images/icon/48/s04.png" alt=""/></a>
+                    <p><a href="">备课</a></p>
+                </li>
+                <li class="yui3-u">
+                    <a href="../home/menu.html"><img src="../../assets/common/images/icon/48/home.png" alt=""/></a>
+                    <p><a href="../home/menu.html">首页</a></p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--cmspages-head end-->
+
+<div class="cmspages">
+    <div class="cmspages-layout yui3-g">
+        <div class="cmspages-content-menu yui3-u">
+            <div class="cmspages-content-menu-bd">
+                <ul>
+                    <li>
+                        <a class="on" href="./quiz.synch.html">同步训练</a>
+                    </li>
+                    <li>
+                        <a class="" href="./quiz.special.html">专项考试</a>
+                    </li>
+                    <li>
+                        <a class="" href="./quiz.search.html">考试训练</a>
+                    </li>
+                    <li>
+                        <a class="" href="./quiz.strengthen.html">强化训练</a>
+                    </li>
+                    <li class="">
+                        <a class="" href="javascript:void(0)"><i class="fa fa-chevron-circle-right fa-grey fa-2x"></i><i class="fa fa-chevron-circle-down fa-grey fa-2x"></i>个人中心</a>
+                        <ul>
+                            <li>
+                                <a class="" href="./quiz.analysis.html">学习分析</a>
+                            </li>
+                            <li>
+                                <a href="./quiz.record.html">测试记录</a>
+                            </li>
+                            <li>
+                                <a href="./quiz.myexam.html">我的组卷</a>
+                            </li>
+                            <li>
+                                <a href="./quiz.keep.html">我的收藏</a>
+                            </li>
+                            <li>
+                                <a href="./quiz.wrong.html">我的错题本</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="cmspages-content yui3-u">
+            <div class="assemble assemble-synch quiz">
+                <div class="assemble-hd">
+                    <select name="" id="" class="yui3-u">
+                        <option value="">人教版</option>
+                        <option value="">粤教版</option>
+                    </select>
+
+                    <select name="" id="" class="yui3-u">
+                        <option value="">一年级</option>
+                        <option value="">二年级</option>
+                        <option value="">三年级</option>
+                    </select>
+
+                    <select name="" id="" class="yui3-u">
+                        <option value="">数学</option>
+                        <option value="">语文</option>
+                        <option value="">数学</option>
+                    </select>
+
+                    <select name="" id="" class="yui3-u">
+                        <option value="">上册</option>
+                        <option value="">下册</option>
+                    </select>
+                </div>
+
+                <div class="quiz-synch-bd" style="visibility: hidden">
+                    <div class="easyui-accordion" data-options="multiple:true,selected:false" style="width: 100%">
+                        <div title="第十三章  内能" data-options="iconCls:'fa fa-chevron-right'" style="padding:10px;">
+                            <ul>
+                                <li class="yui3-g">
+                                    <div class="yui3-u-1-2"><i class="fa circle"></i><a href="./quiz.examinfo.html" title="第1节 分子热运动">第1节 分子热运动</a></div>
+                                    <div class="yui3-u-1-2" align="right"><a href="./quiz.examinfo.html" class="yui3-u cp-button">开始练习</a></div>
+                                </li>
+                                <li class="yui3-g">
+                                    <div class="yui3-u-1-2"><i class="fa circle"></i><a href="" title="第1节 分子热运动">第1节 分子热运动</a></div>
+                                    <div class="yui3-u-1-2" align="right"><a href="./quiz.examinfo.html" class="yui3-u cp-button">开始练习</a></div>
+                                </li>
+                                <li class="yui3-g">
+                                    <div class="yui3-u-1-2"><i class="fa circle"></i><a href="" title="第1节 分子热运动">第1节 分子热运动</a></div>
+                                    <div class="yui3-u-1-2" align="right"><a href="./quiz.examinfo.html" class="yui3-u cp-button">开始练习</a></div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div title="第十三章  内能" data-options="iconCls:'fa fa-chevron-right'" style="padding:10px;">
+                            <ul>
+                                <li class="yui3-g">
+                                    <div class="yui3-u-1-2"><i class="fa circle"></i><a href="" title="第1节 分子热运动">第1节 分子热运动</a></div>
+                                    <div class="yui3-u-1-2" align="right"><a href="" class="yui3-u cp-button">开始练习</a></div>
+                                </li>
+                                <li class="yui3-g">
+                                    <div class="yui3-u-1-2"><i class="fa circle"></i><a href="" title="第1节 分子热运动">第1节 分子热运动</a></div>
+                                    <div class="yui3-u-1-2" align="right"><a href="" class="yui3-u cp-button">开始练习</a></div>
+                                </li>
+                                <li class="yui3-g">
+                                    <div class="yui3-u-1-2"><i class="fa circle"></i><a href="" title="第1节 分子热运动">第1节 分子热运动</a></div>
+                                    <div class="yui3-u-1-2" align="right"><a href="" class="yui3-u cp-button">开始练习</a></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="../../assets/common/js/lib/jquery.js"></script>
+<script src="../../assets/common/js/require.js"></script>
+<script>
+    require(["easyui/easyloader"],function(){
+        easyloader.load(["accordion"],function(){
+            setTimeout("$('.quiz-synch-bd').css({'visibility': 'visible'})",100)
+        })
+        $(function(){
+            $(".cmspages-content").scroll(function(){
+                $(".exam-view-subject-fixed").css({"top":$(".cmspages-content").scrollTop()})
+            })
+        })
+    })
+</script>
+</body>
+</html>

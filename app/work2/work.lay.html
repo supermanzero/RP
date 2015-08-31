@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>布置作业</title>
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+    <link rel="stylesheet" href="../../assets/common/css/yahoo-reset.css"/>
+    <link rel="stylesheet" href="../../assets/common/css/base.css"/>
+    <link rel="stylesheet" href="../../assets/common/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../assets/common/css/dialog.css"/>
+    <link rel="stylesheet" href="../../assets/work/css/work2.css"/>
+    <link rel="stylesheet" href="../../assets/work/css/datetimebox/datetimebox.css"/>
+</head>
+<body>
+<!--user-menu-->
+<div class="user-menu yui3-g">
+    <div class="user-menu-hd yui3-u">
+        <a href="" class="yui3-u easyui-menubutton" data-options="menu:'#user-menu-content'">ASDFSDF<i class="fa fa-caret-down fa-blue fa-3x"></i></a>
+        <div id="user-menu-content" class="menu-content" style="position: absolute;">
+            <div class="user-menu-content-bd">
+                <i class="fa fa-caret-up fa-2x"></i>
+                <ul>
+                    <li>
+                        <a href="../accountSettings/message.html">消息</a>
+                    </li>
+                    <li>
+                        <a href="../accountSettings/bind.html">绑定</a>
+                    </li>
+                    <li>
+                        <a href="../accountSettings/userinfo-set.html">设置</a>
+                    </li>
+                    <li>
+                        <a href="">退出</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--user-menu end-->
+
+<!--cmspages-head-->
+<div class="cmspages-head yui3-g">
+    <div class="cmspages-head-menu yui3-u easyui-menubutton" data-options="menu:'#cmspages-head-menu-content'">
+        <img class="yui3-u" src="../../assets/common/images/icon/48/s02.png" alt=""/>
+        <label class="yui3-u">个人空间</label>
+        <i class="fa fa-angle-down fa-3x"></i>
+    </div>
+    <div id="cmspages-head-menu-content" class="menu-content" style="position: absolute;">
+        <div class="cmspages-head-menut-bd">
+            <i class=""></i>
+            <ul class="yui3-g">
+                <li class="yui3-u">
+                    <a href=""><img src="../../assets/common/images/icon/48/s01.png" alt=""/></a>
+                    <p><a href="">备课</a></p>
+                </li>
+                <li class="yui3-u">
+                    <a href=""><img src="../../assets/common/images/icon/48/s02.png" alt=""/></a>
+                    <p><a href="">备课</a></p>
+                </li>
+                <li class="yui3-u">
+                    <a href=""><img src="../../assets/common/images/icon/48/s03.png" alt=""/></a>
+                    <p><a href="">备课</a></p>
+                </li>
+                <li class="yui3-u">
+                    <a href=""><img src="../../assets/common/images/icon/48/s04.png" alt=""/></a>
+                    <p><a href="">备课</a></p>
+                </li>
+                <li class="yui3-u">
+                    <a href="../home/menu.html"><img src="../../assets/common/images/icon/48/home.png" alt=""/></a>
+                    <p><a href="../home/menu.html">首页</a></p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--cmspages-head end-->
+
+<div class="cmspages">
+<div class="cmspages-layout yui3-g">
+<div class="cmspages-content-menu yui3-u">
+    <div class="cmspages-content-menu-bd">
+        <ul>
+            <li>
+                <a class="on" href="javascript:void(0)">初一（1）班</a>
+            </li>
+            <li>
+                <a class="" href="javascript:void(0)">初一（1）班</a>
+            </li>
+            <li>
+                <a class="" href="javascript:void(0)">初一（1）班</a>
+            </li>
+            <li>
+                <a class="" href="javascript:void(0)">初一（1）班</a>
+            </li>
+            <li>
+                <a class="" href="javascript:void(0)">初一（1）班</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="cmspages-content yui3-u">
+    <div class="pub-breadcrumb-wrap">
+        <ol class="pub-breadcrumb yui3-g">
+            <li class="yui3-u"><a href="javascript:void(0);">作业管理</a></li>
+            <li class="yui3-u"><a href="javascript:void(0);">初一（1）班</a></li>
+            <li class="yui3-u active">布置作业</li>
+        </ol>
+        <div class="btn-box yui3-u">
+            <a href="/" class="yui3-u cp-button">返回</a>
+        </div>
+    </div>
+
+
+    <div class="wk-lay">
+        <div class="wk-lay-contant">
+            <div class="wk-lay-bd">
+                <div id="wk-lay-bd-zujuan" class="wk-lay-bd-zujuan tab-bd active">
+                    <h3 class="ft-14 ft-yahei">
+                        以下是您组好的但尚未布置的作业，您可以直接选择它们来布置作业
+                    </h3>
+
+                    <table class="pure-table pure-table-bordered">
+                        <thead>
+                        <tr>
+                            <th>序号</th>
+                            <th>试卷名</th>
+                            <th>试卷类型</th>
+                            <th>题目数</th>
+                            <th>操作</th>
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                不等式专项试题
+                            </td>
+                            <td>
+                                自组
+                            </td>
+                            <td>
+                                12题
+                            </td>
+                            <td>
+                                <a href="./work.laydialog.html"  class="yui3-u cp-button nyroModal">布置作业</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                不等式专项试题
+                            </td>
+                            <td>
+                                自组
+                            </td>
+                            <td>
+                                12题
+                            </td>
+                            <td>
+                                <a href="./work.laydialog.html"  class="yui3-u cp-button nyroModal">布置作业</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                不等式专项试题
+                            </td>
+                            <td>
+                                自组
+                            </td>
+                            <td>
+                                12题
+                            </td>
+                            <td>
+                                <a href="./work.laydialog.html"  class="yui3-u cp-button nyroModal">布置作业</a>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+
+                    <p class="ft-yahei">
+                        您可以点击右边按钮进行组卷和发布作业<a href="/app/test_papers/test/choose" class="yui3-u cp-button ml10 mr10">选题组卷</a>
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
+<!--布置作业-->
+<div id="cmspages-dialog-lay" style="display: block">
+    <div class="cmspages-dialog">
+        <div class="cmspages-dialog-hd">
+            <h3>布置作业</h3>
+            <a href="#" class="nyroModalClose nyroModalCloseButton nmReposition fa fa-times-circle fa-2x" title="close" onclick="easyDialog.close();"></a>
+        </div>
+        <div class="cmspages-dialog-bd">
+            <div class="cmspages-dialog-bd-lay">
+                <ul>
+                    <li class="yui3-g">
+                        <label class="yui3-u info">作业名字：</label>
+                        <input type="text" class="yui3-u"/>
+                    </li>
+                    <li class="yui3-g">
+                        <label class="yui3-u info">布置班级：</label>
+                        <div class="yui3-u checkbox">
+                            <label class="yui3-u"><input type="checkbox"/>初一（1）班</label>
+                            <label class="yui3-u"><input type="checkbox"/>初一（1）班</label>
+                            <label class="yui3-u"><input type="checkbox"/>初一（1）班</label>
+                        </div>
+                    </li>
+                    <li class="yui3-g">
+                        <label class="yui3-u info">老师留言：</label>
+                        <textarea name="" class="yui3-u"></textarea>
+                    </li>
+                    <li class="yui3-g">
+                        <label class="yui3-u info">作业时间：</label>
+                        <div class="yui3-u">
+                            <input id="starttime" class="easyui-datetimebox" data-options="showSeconds:false" value="0"/>
+                            <span style="margin: 0 10px;">至</span>
+                            <input id="endtime" class="easyui-datetimebox" data-options="showSeconds:false" value="0"/>
+                        </div>
+                    </li>
+                    <li class="yui3-g">
+                        <label class="yui3-u info"></label>
+                        <div class="yui3-u ft-button">
+                            <input type="submit" class="yui3-u cp-button" value="确定"/>
+                            <button class="yui3-u cp-button">取消</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--布置作业 end-->
+
+<!--布置作业成功提示-->
+<div id="cmspages-dialog-lay" style="display: block">
+    <div class="cmspages-dialog">
+        <div class="cmspages-dialog-hd">
+            <h3>布置作业成功</h3>
+            <a href="#" class="nyroModalClose nyroModalCloseButton nmReposition fa fa-times-circle fa-2x" title="close" onclick="easyDialog.close();"></a>
+        </div>
+        <div class="cmspages-dialog-bd">
+            <div class="cmspages-dialog-bd-lay-message">
+                <h3>
+                    <i class="fa fa-check-circle"></i>
+                    布置作业成功！
+                </h3>
+                <div class="ft-button">
+                    <a href="./work.detail.html" class="yui3-u cp-button">查看作业</a>
+                    <a href="javascript:void(0)" class="yui3-u cp-button">留在本页</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--布置作业成功提示 end-->
+
+<script src="../../assets/common/js/lib/jquery.js"></script>
+<script src="../../assets/common/js/require.js"></script>
+<script>
+    require(["easyui/easyloader"],function(){
+        easyloader.load(["datetimebox"])
+    })
+</script>
+
+    <!--<script src="/js/lib/pikaday/pikaday.min.js"></script>-->
+    <!--<script src="/js/lib/jquery/jquery-1.11.1.min.js"></script>-->
+    <!--<script src="/js/lib/nm-dialog/nm-dialog.js"></script>-->
+    <!--<script src="/js/lib/bootstrap/js/bootstrap.min.js"></script>-->
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>东田资源应用平台--首页</title>
+    <link rel="stylesheet" href="../../assets/common/css/yahoo-reset.css"/>
+    <link rel="stylesheet" href="../../assets/common/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="../../assets/common/css/index03.css"/>
+    <!--[if lte IE 7]>
+    <link rel="stylesheet" href="../../assets/common/css/update-browser.css"/>
+    <![endif]-->
+</head>
+<body>
+<div class="banner">
+    <ul class="banner-items">
+        <li class="banner-list banner-01 current"></li>
+        <li class="banner-list banner-02"></li>
+    </ul>
+
+    <div class="content">
+        <div class="banner-main-box">
+            <img class="logo" src="../../assets/common/images/title.png" width="411" height="131">
+            <form class="login-form" action="" method="post">
+                <input class="login-input user-input" type="text" name="username" id="un">
+                <input class="login-input pass-input" type="password" name="password" id="ps">
+                <a class="login-submit-btn" href="./menu.html"></a>
+                <!--<input class="login-submit-btn" type="submit" value="" onclick="width.open('../../app/home/menu.html')">-->
+                <div class="clear"></div>
+            </form>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+<div class="app-box">
+    <img class="logo-sub" src="../../assets/common/images/logo.png">
+    <div class="app-items-box">
+        <em class="prev" id="prev"></em>
+        <em class="next" id="next"></em>
+        <dl class="scroll-box">
+            <dd>
+                <ul class="app-items active">
+                    <li class="items-list" title="备课备课备课备课备课备课备课备课备课备课备课备课备课备课备课备课">
+                        <a href="javascript: void(0);"><img src="../../assets/common/images/s07.png"></a>
+                    </li>
+                    <li class="items-list">
+                        <a href="javascript: void(0);"><img src="../../assets/common/images/s08.png"></a>
+                    </li>
+                    <li class="items-list">
+                        <a href="javascript: void(0);"><img src="../../assets/common/images/s09.png"></a>
+                    </li>
+                    <li class="items-list">
+                        <a href="javascript: void(0);"><img src="../../assets/common/images/s10.png"></a>
+                    </li>
+                    <li class="items-list">
+                        <a href="javascript: void(0);"><img src="../../assets/common/images/s11.png"></a>
+                    </li>
+                    <li class="clear"></li>
+                </ul>
+            </dd>
+            <dd>
+                <ul class="app-items">
+                    <li class="items-list">
+                        <a href="javascript: void(0);"><img src="../../assets/common/images/s07.png"></a>
+                    </li>
+                    <li class="items-list">
+                        <a href="javascript: void(0);"><img src="../../assets/common/images/s07.png"></a>
+                    </li>
+                    <li class="items-list">
+                        <a href="javascript: void(0);"><img src="../../assets/common/images/s07.png"></a>
+                    </li>
+                    <li class="items-list">
+                        <a href="javascript: void(0);"><img src="../../assets/common/images/s07.png"></a>
+                    </li>
+                    <li class="items-list">
+                        <a href="javascript: void(0);"><img src="../../assets/common/images/s07.png"></a>
+                    </li>
+                    <li class="clear"></li>
+                </ul>
+            </dd>
+            <dd>
+                <ul class="app-items">
+                    <li class="items-list">
+                        <a href="javascript: void(0);"><img src="../../assets/common/images/s08.png"></a>
+                    </li>
+                    <li class="items-list">
+                        <a href="javascript: void(0);"><img src="../../assets/common/images/s08.png"></a>
+                    </li>
+                    <li class="items-list">
+                        <a href="javascript: void(0);"><img src="../../assets/common/images/s08.png"></a>
+                    </li>
+                    <li class="items-list">
+                        <a href="javascript: void(0);"><img src="../../assets/common/images/s08.png"></a>
+                    </li>
+                    <li class="items-list">
+                        <a href="javascript: void(0);"><img src="../../assets/common/images/s08.png"></a>
+                    </li>
+                    <li class="clear"></li>
+                </ul>
+            </dd>
+        </dl>
+        <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+</div>
+<ul class="type-items">
+    <li class="type-list"><a href="./index.html"><i class="fa fa-dot-circle-o fa-2x"></i></a></li>
+    <li class="type-list"><a href="./index02.html"><i class="fa fa-dot-circle-o fa-2x"></i></a></li>
+    <li class="type-list"><a href="index04.html"><i class="fa fa-dot-circle-o fa-2x"></i></a></li>
+</ul>
+<script src="../../assets/common/js/lib/jquery.js"></script>
+<script src="../../assets/common/js/lib/bxslider/jquery.bxslider.min.js"></script>
+<script>
+    $(function(){
+        var bannerScroll = function(){
+            var scrollLength = $('.banner-items').find('.banner-list').length,
+                    currntIndex = $('.banner-items').find('.current').index(),
+                    nextIndex = ((currntIndex + 1) > (scrollLength - 1)) ? 0 : currntIndex + 1;
+            $('.banner-items').find('.banner-list').eq(currntIndex).fadeOut(1000,function(){
+                $(this).removeClass('current');
+                $('.banner-items').find('.banner-list').eq(nextIndex).fadeIn(1000).addClass('current');
+            });
+        }
+        setInterval(bannerScroll,10000);
+
+        /*
+        * app 轮播
+        * */
+        /*var appScroll = function(direction){
+            var scrollLength = $('.app-items-box .scroll-box').find('.app-items').length,
+                 activeIndex = $('.app-items-box .scroll-box').find('.active').index();
+            var nextIndex;
+            switch (direction) {
+                case 'prev':
+                    nextIndex = ((activeIndex - 1) < 0) ? (scrollLength - 1) : (activeIndex - 1);
+                    break;
+                case 'next':
+                    nextIndex = ((activeIndex + 1) >= scrollLength) ? 0 : (activeIndex + 1);
+            }
+            if (nextIndex != -1 && (nextIndex != scrollLength)) {
+                $('.app-items-box .scroll-box').find('.app-items').fadeOut(150).removeClass('active');
+                $('.app-items-box .scroll-box').find('.app-items').eq(nextIndex).fadeIn(250).addClass('active');
+            }
+
+        }
+        $('.prev').on('click', function(){
+            appScroll('prev')
+        });
+        $('.next').on('click', function(){
+            appScroll('next')
+        })*/
+
+        $('.scroll-box').bxSlider({
+            nextSelector: '#next',
+            prevSelector: '#prev',
+            nextText:'',
+            prevText:'',
+            pager:false
+        });
+     })
+</script>
+</body>
+</html>

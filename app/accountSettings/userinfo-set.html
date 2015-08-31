@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="../../assets/common/css/yahoo-reset.css"/>
+    <link rel="stylesheet" href="../../assets/common/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="../../assets/common/css/dialog.css"/>
+    <link rel="stylesheet" href="../../assets/common/css/base.css"/>
+    <link rel="stylesheet" href="../../assets/common/css/style.css"/>
+    <style>
+        .webuploader-container {
+            position: relative;
+        }
+        .webuploader-element-invisible {
+            position: absolute !important;
+            clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+            clip: rect(1px,1px,1px,1px);
+        }
+        .webuploader-pick {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+            background: #A0E159;
+            padding: 10px 15px;
+            color: #fff;
+            text-align: center;
+            border-radius: 3px;
+            overflow: hidden;
+        }
+        .webuploader-pick-hover {
+            /*background: #a6e659;*/
+        }
+
+        .webuploader-pick-disable {
+            opacity: 0.6;
+            pointer-events:none;
+        }
+
+
+        .cropper-container {
+            position: relative;
+            overflow: hidden;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            background-color: #fff;
+
+            -webkit-tap-highlight-color: transparent;
+            -webkit-touch-callout: none;
+        }
+
+        .cropper-container .cropper-modal {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: #000;
+            filter: alpha(opacity=50);
+            opacity: .5;
+        }
+
+        .cropper-container .cropper-dragger {
+            position: absolute;
+            top: 10%;
+            left: 10%;
+            width: 80%;
+            height: 80%;
+        }
+
+        .cropper-container .cropper-preview {
+            display: block;
+            width: 100%;
+            height: 100%;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            overflow: hidden;
+            border-color: #69f;
+            border-color: rgba(51, 102, 255, .75);
+            border-style: solid;
+            border-width: 1px;
+        }
+
+        .cropper-container .cropper-dashed {
+            position: absolute;
+            display: block;
+            filter: alpha(opacity=50);
+            border: 0 dashed #fff;
+            opacity: .5;
+        }
+
+        .cropper-container .dashed-h {
+            top: 33.3%;
+            left: 0;
+            width: 100%;
+            height: 33.3%;
+            border-top-width: 1px;
+            border-bottom-width: 1px;
+        }
+
+        .cropper-container .dashed-v {
+            top: 0;
+            left: 33.3%;
+            width: 33.3%;
+            height: 100%;
+            border-right-width: 1px;
+            border-left-width: 1px;
+        }
+
+        .cropper-container .cropper-face,
+        .cropper-container .cropper-line,
+        .cropper-container .cropper-point {
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 100%;
+            filter: alpha(opacity=10);
+            opacity: .1;
+        }
+
+        .cropper-container .cropper-face {
+            top: 0;
+            left: 0;
+            cursor: move;
+            background-color: #fff;
+        }
+
+        .cropper-container .cropper-line {
+            background-color: #69f;
+        }
+
+        .cropper-container .line-e {
+            top: 0;
+            right: -2px;
+            width: 5px;
+            cursor: e-resize;
+        }
+
+        .cropper-container .line-n {
+            top: -2px;
+            left: 0;
+            height: 5px;
+            cursor: n-resize;
+        }
+
+        .cropper-container .line-w {
+            top: 0;
+            left: -2px;
+            width: 5px;
+            cursor: w-resize;
+        }
+
+        .cropper-container .line-s {
+            bottom: -2px;
+            left: 0;
+            height: 5px;
+            cursor: s-resize;
+        }
+
+        .cropper-container .cropper-point {
+            width: 5px;
+            height: 5px;
+            background-color: #69f;
+            filter: alpha(opacity=75);
+            opacity: .75;
+        }
+
+        .cropper-container .point-e {
+            top: 49%;
+            right: -2px;
+            cursor: e-resize;
+        }
+
+        .cropper-container .point-n {
+            top: -2px;
+            left: 49%;
+            cursor: n-resize;
+        }
+
+        .cropper-container .point-w {
+            top: 49%;
+            left: -2px;
+            cursor: w-resize;
+        }
+
+        .cropper-container .point-s {
+            bottom: -2px;
+            left: 49%;
+            cursor: s-resize;
+        }
+
+        .cropper-container .point-ne {
+            top: -2px;
+            right: -2px;
+            cursor: ne-resize;
+        }
+
+        .cropper-container .point-nw {
+            top: -2px;
+            left: -2px;
+            cursor: nw-resize;
+        }
+
+        .cropper-container .point-sw {
+            bottom: -2px;
+            left: -2px;
+            cursor: sw-resize;
+        }
+
+        .cropper-container .point-se {
+            right: -2px;
+            bottom: -2px;
+            width: 20px;
+            height: 20px;
+            cursor: se-resize;
+            filter: alpha(opacity=100);
+            opacity: 1;
+        }
+
+        .cropper-container .point-se:before {
+            position: absolute;
+            right: -50%;
+            bottom: -50%;
+            display: block;
+            width: 200%;
+            height: 200%;
+            content: " ";
+            background-color: #69f;
+            filter: alpha(opacity=0);
+            opacity: 0;
+        }
+
+        @media (min-width: 768px) {
+            .cropper-container .point-se {
+                width: 15px;
+                height: 15px;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .cropper-container .point-se {
+                width: 10px;
+                height: 10px;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .cropper-container .point-se {
+                width: 5px;
+                height: 5px;
+                filter: alpha(opacity=75);
+                opacity: .75;
+            }
+        }
+
+        .cropper-hidden {
+            display: none !important;
+        }
+
+        /* ------------ */
+        #wrapper {
+            width: 980px;
+            margin: 0 auto;
+
+            margin: 1em;
+            width: auto;
+        }
+
+        .img-preview {
+            /*width: 160px;*/
+            /*height: 90px;*/
+            width: 68px;
+            height: 68px;
+            margin-top: 1em;
+            /*border: 1px solid #ccc;*/
+            border-radius: 5px;
+            background: #ddd;
+        }
+
+        .cropper-wraper {
+            position: relative;
+        }
+
+        .upload-btn {
+            display: inline-block;
+            cursor: pointer;
+            background: #A0E159;
+            padding: 10px 15px;
+            color: #fff;
+            text-align: center;
+            border-radius: 3px;
+            overflow: hidden;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+        .upload-btn:hover {
+            /*background: #f0f0f0;*/
+        }
+
+        #filePicker{
+            position: absolute;
+            bottom: 0;
+            right: 120px;
+            margin-bottom: -4px;
+        }
+        .img-container{
+            position: relative;
+            height: 600px;
+            background: #ddd;
+            border-radius: 3px;
+            padding: 20px;
+            overflow: hidden;
+        }
+        .img-container .info{
+            position: absolute;
+            width: 100%;
+            margin-left: -20px;
+            text-align: center;
+            top: 50%;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+<!--user-menu-->
+    <div class="user-menu yui3-g">
+        <div class="user-menu-hd yui3-u">
+            <a href="" class="yui3-u easyui-menubutton" data-options="menu:'#user-menu-content'">ASDFSADFSDFSDFSDFSDFSDF<i class="fa fa-caret-down fa-blue fa-3x"></i></a>
+            <div id="user-menu-content" class="menu-content" style="position: absolute;">
+                <div class="user-menu-content-bd">
+                    <i class="fa fa-caret-up fa-2x"></i>
+                    <ul>
+                        <li>
+                            <a href="../accountSettings/message.html">消息</a>
+                        </li>
+                        <li>
+                            <a href="../accountSettings/bind.html">绑定</a>
+                        </li>
+                        <li>
+                            <a href="../accountSettings/userinfo-set.html">设置</a>
+                        </li>
+                        <li>
+                            <a href="">退出</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--user-menu end-->
+
+<!--cmspages-head-->
+    <div class="cmspages-head yui3-g">
+        <div class="cmspages-head-menu yui3-u easyui-menubutton" data-options="menu:'#cmspages-head-menu-content'">
+            <img class="yui3-u" src="../../assets/common/images/icon/48/s02.png" alt=""/>
+            <label class="yui3-u">账号设置</label>
+            <i class="fa fa-angle-down fa-3x"></i>
+        </div>
+        <div id="cmspages-head-menu-content" class="menu-content" style="position: absolute;">
+            <div class="cmspages-head-menut-bd">
+                <i class=""></i>
+                <ul class="yui3-g">
+                    <li class="yui3-u">
+                        <a href=""><img src="../../assets/common/images/icon/48/s01.png" alt=""/></a>
+                        <p><a href="">备课</a></p>
+                    </li>
+                    <li class="yui3-u">
+                        <a href=""><img src="../../assets/common/images/icon/48/s02.png" alt=""/></a>
+                        <p><a href="">备课</a></p>
+                    </li>
+                    <li class="yui3-u">
+                        <a href=""><img src="../../assets/common/images/icon/48/s03.png" alt=""/></a>
+                        <p><a href="">备课</a></p>
+                    </li>
+                    <li class="yui3-u">
+                        <a href=""><img src="../../assets/common/images/icon/48/s04.png" alt=""/></a>
+                        <p><a href="">备课</a></p>
+                    </li>
+                    <li class="yui3-u">
+                        <a href="../home/menu.html"><img src="../../assets/common/images/icon/48/home.png" alt=""/></a>
+                        <p><a href="../home/menu.html">首页</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+<!--cmspages-head end-->
+
+
+<div class="cmspages">
+    <div class="cmspages-layout yui3-g">
+        <div class="cmspages-content-menu yui3-u">
+            <div class="cmspages-content-menu-bd">
+                <ul>
+                    <li>
+                        <a class="on" href="../accountSettings/userinfo-set.html"><i class="fa fa-user fa-grey fa-2x"></i>个人资料</a>
+                    </li>
+                    <li>
+                        <a href="./safe-bind.html"><i class="fa fa-lock fa-grey fa-2x"></i>安全绑定</a>
+                    </li>
+                    <li>
+                        <a href="./password-set.html"><i class="fa fa-cog fa-grey fa-2x"></i>修改密码</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="cmspages-content yui3-u">
+            <div class="cmspages-userinfo">
+                <div class="cmspages-userinfo-bd">
+                    <fieldset class="account-fieldset">
+                        <legend>个人资料</legend>
+                        <ul>
+                            <li class="yui3-g">
+                                <label class="yui3-u tle">头像：</label>
+                                <div class="user-img yui3-u">
+                                    <a href="" class="user-img-link"><img src="http://lorempixel.com/68/68/food/" alt=""></a>
+                                    <p style="line-height: 1;text-align: center;margin: 5px 0 0;"><a href="javascript:void(0)" class="edit-head">编辑头像</a></p>
+                                </div>
+                            </li>
+                            <li class="yui3-g">
+                                <label class="yui3-u tle">账号：</label>
+                                <p class="yui3-u">QKLJLKJ</p>
+                            </li>
+                            <li class="yui3-g">
+                                <label class="yui3-u tle">昵称：</label>
+                                <input type="text" class="yui3-u text" value="默认昵称"/>
+                            </li>
+                            <li class="yui3-g">
+                                <label class="yui3-u tle">性别：</label>
+                                <label><strong>男</strong><input type="radio" class="yui3-u radio" name="sex" checked/></label>
+                                <label><strong>女</strong><input type="radio" class="yui3-u radio" name="sex"/></label>
+                            </li>
+                            <li class="yui3-g">
+                                <label class="yui3-u tle">角色：</label>
+                                <p class="yui3-u">老师</p>
+                            </li>
+                            <li class="yui3-g">
+                                <label class="yui3-u tle">学校：</label>
+                                <p class="yui3-u">唐朝小学</p>
+                            </li>
+                            <li class="yui3-g">
+                                <label class="yui3-u tle">科目：</label>
+                                <p class="yui3-u">语文</p>
+                            </li>
+                            <li class="yui3-g seelctcity">
+                                <label class="yui3-u tle">所在地：</label>
+                                <select name="s" id="s" class="yui3-u">
+                                    <option value="null">请选择</option>
+                                </select>
+                                <select name="c" id="c" class="yui3-u">
+                                    <option value="null">请选择</option>
+                                </select>
+                                <select name="d" id="d" class="yui3-u">
+                                    <option value="null">请选择</option>
+                                </select>
+                            </li>
+                            <li class="yui3-g">
+                                <label class="yui3-u tle">签名：</label>
+                                <textarea name="" class="textarea"></textarea>
+                            </li>
+                            <li class="yui3-g">
+                                <label class="yui3-u tle"></label>
+                                <input type="submit" name="submit" class="yui3-u cp-button" value="保存"/>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="cropper-dialog" style="position: absolute;top:-999px;">
+    <div id="wrapper">
+    <!-- Croper container -->
+    <div class="cropper-wraper"  style="width: 600px;height: 730px;overflow: hidden">
+        <div class="img-container">
+            <p class="info"><i class="fa fa-picture-o fa-2x" style="margin:0 0 10px"></i><br/>只支持JPG、PNG、GIF，大小不超过5M</p>
+            <img src="" alt="" />
+        </div>
+
+        <div class="img-box">
+            <div class="img-preview" style="display: inline-block"></div>
+            <span style="font-size: 12px;font-family: 'Microsoft YaHei';vertical-align: 2px">(头像预览)</span>
+        </div>
+
+        <div class="upload-btn">上传所选区域</div>
+        <div id="filePicker">选择文件</div>
+    </div>
+
+</div>
+</div>
+<script src="../../assets/common/js/lib/jquery.js"></script>
+<script src="../../assets/common/js/lib/webuploader/webuploader.min.js"></script>
+<script src="../../assets/common/js/core/cropper.js"></script>
+<script src="../../assets/common/js/require.js"></script>
+<script>
+    require(["easyui/easyloader","core/public","lib/dialog"],function(load,public,dialog){
+        <!--省市区 测试-->
+        $(".edit-head").on("click",function(){
+            $.nmManual("#cropper-dialog", {closeButton: '<a href="#" class="nyroModalClose nyroModalCloseButton nmReposition fa fa-times-circle fa-2x" title="close"></a>',_close:function(){location.reload() },callbacks: {afterShowCont: function(nm) {$(':focus').blur()}}})
+        })
+        public.selectcity(".seelctcity")
+    });
+</script>
+</body>
+</html>

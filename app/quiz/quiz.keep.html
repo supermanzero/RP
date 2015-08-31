@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>我的组卷</title>
+    <link rel="stylesheet" href="../../assets/common/css/yahoo-reset.css"/>
+    <link rel="stylesheet" href="../../assets/common/css/base.css"/>
+    <link rel="stylesheet" href="../../assets/common/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../assets/common/css/dialog.css"/>
+    <link rel="stylesheet" href="../../assets/quiz/css/quiz.css"/>
+</head>
+<body>
+<!--user-menu-->
+<div class="user-menu yui3-g">
+    <div class="user-menu-hd yui3-u">
+        <a href="" class="yui3-u easyui-menubutton" data-options="menu:'#user-menu-content'">ASDFSDF<i class="fa fa-caret-down fa-blue fa-3x"></i></a>
+        <div id="user-menu-content" class="menu-content" style="position: absolute;">
+            <div class="user-menu-content-bd">
+                <i class="fa fa-caret-up fa-2x"></i>
+                <ul>
+                    <li>
+                        <a href="../accountSettings/message.html">消息</a>
+                    </li>
+                    <li>
+                        <a href="../accountSettings/bind.html">绑定</a>
+                    </li>
+                    <li>
+                        <a href="../accountSettings/userinfo-set.html">设置</a>
+                    </li>
+                    <li>
+                        <a href="">退出</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--user-menu end-->
+
+<!--cmspages-head-->
+<div class="cmspages-head yui3-g">
+    <div class="cmspages-head-menu yui3-u easyui-menubutton" data-options="menu:'#cmspages-head-menu-content'">
+        <img class="yui3-u" src="../../assets/common/images/icon/48/s02.png" alt=""/>
+        <label class="yui3-u">个人空间</label>
+        <i class="fa fa-angle-down fa-3x"></i>
+    </div>
+    <div id="cmspages-head-menu-content" class="menu-content" style="position: absolute;">
+        <div class="cmspages-head-menut-bd">
+            <i class=""></i>
+            <ul class="yui3-g">
+                <li class="yui3-u">
+                    <a href=""><img src="../../assets/common/images/icon/48/s01.png" alt=""/></a>
+                    <p><a href="">备课</a></p>
+                </li>
+                <li class="yui3-u">
+                    <a href=""><img src="../../assets/common/images/icon/48/s02.png" alt=""/></a>
+                    <p><a href="">备课</a></p>
+                </li>
+                <li class="yui3-u">
+                    <a href=""><img src="../../assets/common/images/icon/48/s03.png" alt=""/></a>
+                    <p><a href="">备课</a></p>
+                </li>
+                <li class="yui3-u">
+                    <a href=""><img src="../../assets/common/images/icon/48/s04.png" alt=""/></a>
+                    <p><a href="">备课</a></p>
+                </li>
+                <li class="yui3-u">
+                    <a href="../home/menu.html"><img src="../../assets/common/images/icon/48/home.png" alt=""/></a>
+                    <p><a href="../home/menu.html">首页</a></p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--cmspages-head end-->
+
+<div class="cmspages">
+    <div class="cmspages-layout yui3-g">
+        <div class="cmspages-content-menu yui3-u">
+            <div class="cmspages-content-menu-bd">
+                <ul>
+                    <li>
+                        <a class="" href="./quiz.synch.html">同步训练</a>
+                    </li>
+                    <li>
+                        <a class="" href="./quiz.special.html">专项考试</a>
+                    </li>
+                    <li>
+                        <a class="" href="./quiz.search.html">考试训练</a>
+                    </li>
+                    <li>
+                        <a class="" href="./quiz.strengthen.html">强化训练</a>
+                    </li>
+                    <li class="on">
+                        <a class="" href="javascript:void(0)"><i class="fa fa-chevron-circle-right fa-grey fa-2x"></i><i class="fa fa-chevron-circle-down fa-grey fa-2x"></i>个人中心</a>
+                        <ul>
+                            <li>
+                                <a class="" href="./quiz.analysis.html">学习分析</a>
+                            </li>
+                            <li>
+                                <a href="./quiz.record.html">测试记录</a>
+                            </li>
+                            <li>
+                                <a class="" href="./quiz.myexam.html">我的组卷</a>
+                            </li>
+                            <li>
+                                <a class="on" href="./quiz.keep.html">我的收藏</a>
+                            </li>
+                            <li>
+                                <a href="./quiz.wrong.html">我的错题本</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="cmspages-content yui3-u">
+            <div class="assemble">
+                <div class="exam-view-wrap">
+                    <div class="exam-view-subject-fixed">
+                        <div class="exam-view-subject">
+                            <div class="exam-view-subject-hd">
+                                <h3>测试库中有10条题目</h3>
+                            </div>
+                        </div>
+                        <div class="exam-view-subject-ft">
+                            <a href="" class="yui3-u cp-button">添加试题</a>
+                            <a href="" class="yui3-u cp-button">进入测试库</a>
+                        </div>
+                    </div>
+
+                    <div class="assemble-keep-search">
+                        <select name="" id="" class="yui3-u">
+                            <option value="">英语</option>
+                            <option value="">英语</option>
+                        </select>
+                        <select name="" id="" class="yui3-u">
+                            <option value="">六年级</option>
+                            <option value="">七年级</option>
+                        </select>
+                        <input type="submit" class="yui3-u cp-button" value="搜索"/>
+                        <div class="right-box">
+                            <a href="" class="yui3-u cp-button">时间<i class="fa fa-arrow-down"></i></a>
+                            <!--升序-->
+                            <!--<a href="" class="yui3-u cp-button">时间<i class="fa fa-arrow-up"></i></a>-->
+                        </div>
+                    </div>
+
+                    <div class="exam-view-hd">
+                        <h3>【高中 思想政治】【单选题】此题测试人数：10人</h3>
+                        <span>收藏时间：2014-05-12 13:13:12</span>
+                    </div>
+
+                    <div class="exam-view-bd">
+                        <div class="exam-img">
+                            <img src="http://res.gopep.cn/exam_paper/2015/5/12/11/F5B35AE276EB8EBC98747785F50DD95.png" alt=""/>
+                        </div>
+                        <div class="exam-btn" align="right">
+                            <button class="yui3-u cp-button">取消收藏</button>
+                            <button class="yui3-u cp-button">加入测试库</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!--<div class="pagination">
+                    <a href=""><</a>
+                    <a  class="on" href="">1</a>
+                    <a href="">2</a>
+                    <a href="">3</a>
+                    <a href="">4</a>
+                    <a href="">5</a>
+                    <a href="">></a>
+                </div>-->
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../../assets/common/js/lib/jquery.js"></script>
+<script src="../../assets/common/js/require.js"></script>
+<script>
+    require(["easyui/easyloader"],function(){
+        $(function(){
+            $(".cmspages-content").scroll(function(){
+                $(".exam-view-subject-fixed").css({"top":$(".cmspages-content").scrollTop()})
+            })
+        })
+    })
+</script>
+</body>
+</html>
