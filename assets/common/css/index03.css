@@ -1,0 +1,176 @@
+.clear{
+    clear: both;
+}
+.banner{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../images/blackBk60.png") repeat;
+    /*height: 700px;*/
+}
+.banner-items{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    z-index: -1;
+}
+.banner-items .banner-list{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-width: 1024px;
+    height: 700px;
+}
+.banner-items .banner-01{
+    background: url("../images/banner01.jpg") center center no-repeat scroll;
+}
+.banner-items .banner-02{
+    background: url("../images/banner02.jpg") center center no-repeat scroll;
+}
+.banner-items li.current{
+    display: block;
+}
+.login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 800px;
+    height: 242px;
+    margin: -121px 0 0 -400px;
+}
+
+.type-items{
+    position: absolute;
+    bottom: 70px;
+    right: 50px;
+    display: inline-block;
+}
+.type-items .type-list{
+    float: left;
+    display: inline-block;
+    margin-left: 15px;
+    color: #fff;
+}
+.type-items .type-list a{
+    color: #999;
+}
+.type-items .type-list a:hover{
+    color: #7DDAFC;
+}
+.banner-main-box{
+    position: absolute;
+    left: 50%;
+    top: 222px;
+    z-index: 1;
+    width: 804px;
+    height: 225px;
+    margin-left: -402px;
+}
+.login-form .login-input{
+    width: 222px;
+    height: 35px;
+    line-height: 35px;
+    border: none;
+    background: url("../images/s01.png") 0 0 scroll no-repeat;
+    padding: 16px 20px 18px 20px;
+    color: #fff;
+    font-size: 16px;
+    float: left;
+    margin-right: 7px;
+}
+.login-form .user-input{
+    background-position: 0 -111px;
+}
+.login-form .pass-input{
+    background-position: -270px -111px;
+}
+.login-form .login-input:focus, .login-form .login-input:after, .login-form .login-input:active{
+    outline: 0;
+    background-position: 0 -1px;
+}
+.login-form .login-submit-btn{
+    width: 264px;
+    height: 70px;
+    border: none;
+    background: url("../images/s01.png") -541px -111px no-repeat scroll;
+    cursor: pointer;
+    float: left;
+    margin-left: 2px;
+}
+.login-form .login-submit-btn:hover{
+    background-position: -541px -1px;
+}
+.login-form .login-submit-btn:focus, .login-form .login-submit-btn:active, .login-form .login-submit-btn:after{
+    outline: 0;
+}
+.banner-main-box .logo{
+    margin-bottom: 30px;
+}
+.app-box{
+    width: 1006px;
+    margin: 10px auto;
+}
+.app-box .logo-sub{
+    float: left;
+}
+.app-items-box{
+    position: relative;
+    top: 37px;
+    float: left;
+    width: 600px;
+    height: 103px;
+    margin-left: 80px;
+}
+.app-items{
+    width: 600px;
+    height: 103px;
+}
+
+.app-items .items-list{
+    width: 120px;
+    height: 103px;
+    text-align: center;
+    float: left;
+}
+.app-items-box .prev{
+    position: absolute;
+    left: -25px;
+    top: 28px;
+    display: block;
+    width: 21px;
+    height: 40px;
+    background: url("../images/s03.png") 0 0 no-repeat scroll;
+    cursor: pointer;
+}
+.app-items-box .prev:hover{
+    background: url("../images/s04.png") 0 0 no-repeat scroll;
+}
+.app-items-box .next{
+    position: absolute;
+    right: -25px;
+    top: 28px;
+    display: block;
+    width: 21px;
+    height: 40px;
+    background: url("../images/s05.png") 0 0 no-repeat scroll;
+    cursor: pointer;
+}
+.app-items-box .next:hover{
+    background: url("../images/s06.png") 0 0 no-repeat scroll;
+}
+.bx-next, .bx-prev{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.tips-box{
+
+}
